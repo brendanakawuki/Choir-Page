@@ -1,0 +1,365 @@
+<style>
+    /*.main-container {
+    display: flex;
+    display: inline;
+}
+    .card bg-dark text-danger {
+        background-size: cover;
+        position: relative;
+        min-height: 301px;
+        margin-bottom: 30px;
+
+        height: 100%;
+        object-fit: contain;
+
+    }
+
+    .card-img-overlay,
+    .card-title,
+    .card-link {
+      text-align: center;
+
+    }
+*/
+
+
+    .card-img-overlay {
+        /*width: 200px;
+  height: 400px;*/
+
+        display: block;
+        /*object-fit: cover;*/
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .card bg-dark text-white,
+    .card bg-dark text-black,
+    .card bg-dark text-danger {
+        width: 80%;
+        background-color: white;
+
+    }
+
+
+    .div {
+        /* display: flex;*/
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: 940px;
+    }
+</style>
+
+
+
+<!--command to displays links-->
+<div class="container">
+    <!--first navbar-->
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+
+            <a class="navbar-brand">Choose another country or region to see content specific to your location.</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+
+                    <button class="btn btn-secondary dropdown-toggle btn-expand-lg" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-angle-down mr-3"></i> Uganda
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">kenya</a>
+
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Continue</button>
+    </nav>
+    <!--end of first navbar-->
+
+    <!--begin of second navbar-->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: black">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="container" id="navbarNav">
+            <ul class="nav navbar-nav navbar-center">
+                <p>
+                    <i class="fa fa-apple mr-3" style='font-size:24px' style="color: white"></i></p>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Mac <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">iPad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">iPhone</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Watch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <p>
+                    <i class="fa fa-search mr-3" style='font-size:24px' style="color: white"></i>
+                </p>
+                <p>
+                    <i class="fa fa-shopping-bag mr-3" style='font-size:24px' style="color: white"></i>
+                </p>
+            </ul>
+        </div>
+    </nav>
+
+    <!--end of second navbar-->
+
+    <!--begin of third navbar-->
+
+    <nav class="navbar navbar-expand-lg navbar-success">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="container" id="navbarNav">
+            <ul class="nav navbar-nav navbar-center">
+
+                <p class="container">
+                    Evaluate COVID‑19 symptoms and understand next steps
+
+                    <i class="fa fa-angle-right"></i></p>
+
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: lightskyblue">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="container" id="navbarNav">
+            <ul class="container-fluid">
+
+                <p style="text-emphasis-color: whitesmoke;">
+                    <a href="#" class="card-link">Shop online</a> and get free, no‑contact delivery, Specialist help,
+                    and more.
+                </p>
+            </ul>
+        </div>
+    </nav>
+    <!--end of third navbar-->
+
+    <!--the overlay image 1-->
+
+    <div class="card bg-dark text-black">
+
+        <img class="container-img" src="assets/images/go.jpg" alt="#" style="width: 100%; height: 30%;">
+        <div class="card-img-overlay">
+            <br><br> <br><br>
+            <h5 class="card-title">iphone 12 Pro Max</h5>
+            <p class="card-text"> <strong>Go big</strong></p>
+            <p class="card-text">Pre-order iphone 12 Pro Max today.</p>
+            <div class="card-body">
+                <a href="#" class="card-link">Learn more <i class="fa fa-angle-right"></i></a>
+                <a href="#" class="card-link">Pre-order <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--end of overlay image 1-->
+
+    <!--begin of overlay image 2-->
+
+    <div class="card bg-dark text-black">
+        <div>
+            <img class="container-img" src="assets/images/ip.jpg" alt="#" style="width: 100%; height: 30%;"></div>
+        <div class="card-img-overlay">
+            <br><br> <br><br>
+            <h5 class="card-title">iphone 12 Pro Max</h5>
+            <p class="card-text"> <strong>Go big</strong></p>
+            <p class="card-text">Pre-order iphone 12 Pro Max today.</p>
+            <div class="card-body">
+                <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                <a href="#" class="card-link"> Pre-order <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--end of overlay image 2-->
+
+    <!--begin of overlay image 3-->
+
+    <div class="card bg-dark text-black">
+
+        <img class="container-img" src="assets/images/pod.jpg" alt="#" style="width: 100%; height: 30%;">
+        <div class="card-img-overlay">
+            <br><br> <br><br> <br><br> <br><br>
+            <h5 class="card-title"><strong>HomePod mini</strong></h5>
+            <div class="card-body">
+                <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                <a href="#" class="card-link"> Buy <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--end of overlay image 3-->
+
+    <br><br>
+    <!--begin of column part 1-->
+
+    <div class="row mb-5">
+
+        <div class="col-md-6 mb-4 mb-md-0">
+
+            <div class="card bg-dark text-white">
+
+                <img class="container-img" src="assets/images/event.jpg" alt="#" style="width: 100%; height: 30%;">
+                <div class="card-img-overlay">
+
+                    <h5 class="card-title"><strong>Apple Event</strong></h5>
+                    <p>Watch 11.10 at 10 a.m.PST.</p>
+                    <div class="card-body">
+                        <br><br> <br>
+                        <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4 mb-md-0">
+
+            <div class="card bg-dark text-white">
+                <img class="container-img" src="assets/images/watch1.jpg" alt="#" style="width: 100%; height: 30%;">
+                <div class="card-img-overlay">
+                    <br><br>
+                    <h5 class="card-title"><strong><i class="fa fa-apple mr-3"></i>WATCH </strong></h5>
+                    <P class="text-red">SERIES 6</P>
+                    <p class="text-info">The future of health is on your wrist. </p>
+                    <div class="card-body">
+                        <br><br>
+                        <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                        <a href="#" class="card-link"> Buy <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--end of column part 1-->
+
+
+        <!-- begin of column part 2-->
+
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+
+                <div class="card bg-dark text-black">
+
+                    <img class="container-img" src="assets/images/bundle.jpg" alt="#" style="width: 100%; height: 30%;">
+                    <div class="card-img-overlay">
+
+                        <h5 class="card-title"><strong><i class="fa fa-apple mr-3"></i>One</strong></h5>
+                        <p>Bundle up to six Apple services.</p>
+                        <p>And enjoy more for less.</p>
+                        <div class="card-body">
+                            <br><br> <br>
+                            <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                            <a href="#" class="card-link"> Try it free <i class="fa fa-arrow-circle-o-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="col-md-6 mb-4 mb-md-0">
+
+                <div class="card bg-dark text-danger">
+                    <img class="container-img" src="assets/images/fittness.jpg" alt="#"
+                        style="width: 100%; height: 30%;">
+                    <div class="card-img-overlay">
+                        <br><br>
+                        <h5 class="card-title"><strong><i class="fa fa-apple mr-3"></i>WATCH </strong></h5>
+                        <P class="text-warning">comming late 2020</P>
+                        <p>A new fitness experience powered by Apple watch</p>
+                        <div class="card-body">
+                            <br><br>
+                            <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                            <a href="#" class="card-link"> Notify Me <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--end of column part 2-->
+
+
+        <!--begin of column part 3-->
+
+        <br><br>
+        <div class="row mb-5">
+
+            <div class="col-md-6 mb-4 mb-md-0">
+
+                <div class="card bg-dark text-black">
+                    <img class="container-img" src="assets/images/card.jpg" alt="#" style="width: 100%; height: 20%;">
+                    <div class="card-img-overlay">
+
+                        <h5 class="card-title"><strong><i class="fa fa-apple mr-3"></i>Card</strong></h5>
+                        <p> Get 3% Daily Cash back on <br>
+                            purchases from Apple when <br>
+                            you use Apple Card </p>
+                        <div class="card-body">
+                            <br><br>
+                            <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="card bg-dark text-black">
+
+                    <img class="container-img" src="assets/images/air.jpg" alt="#" style="width: 100%; height: 30%;">
+
+                    <div class="card-img-overlay">
+                        <br>
+                        <br>
+                        <h5 class="card-title"><strong>iPad Air</strong></h5>
+                        <p>Powerful. Colorful. Wonderful.</p>
+                        <div class="card-body">
+                            <br><br>
+                            <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
+                            <a href="#" class="card-link"> Buy <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--end od column part 3-->
+
+    </div>
