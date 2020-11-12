@@ -52,6 +52,20 @@
         align-items: flex-start;
         height: 940px;
     }
+ div.container-img .card-img-overlay{
+    width: 18rem;
+    height: 250px;
+    margin: auto;
+    padding: 200px;
+  }
+   .row-lg{
+      /*padding: auto;*/
+      /*margin: auto;*/
+      padding: 1rem;
+      /*margin-bottom: 1rem;*/
+      /*border-radius: 0.3rem;*/
+
+  }
 </style>
 
 
@@ -95,7 +109,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="container" id="navbarNav">
+        <div class="container-fluid" id="navbarNav">
             <ul class="nav navbar-nav navbar-center">
                 <p>
                     <i class="fa fa-apple mr-3" style='font-size:24px' style="color: white"></i></p>
@@ -140,7 +154,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="container" id="navbarNav">
+        <div class="container-fluid" id="navbarNav">
             <ul class="nav navbar-nav navbar-center">
 
                 <p class="container">
@@ -158,7 +172,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="container" id="navbarNav">
+        <div class="container-fluid" id="navbarNav">
             <ul class="container-fluid">
 
                 <p style="text-emphasis-color: whitesmoke;">
@@ -170,6 +184,9 @@
     </nav>
     <!--end of third navbar-->
 
+    <!--setting the breakpoints for columns-->
+<div class="column">
+    <div class="row-lg">
     <!--the overlay image 1-->
 
     <div class="card bg-dark text-black">
@@ -186,9 +203,9 @@
             </div>
         </div>
     </div>
-
+</div>
     <!--end of overlay image 1-->
-
+    <div class="row-lg">
     <!--begin of overlay image 2-->
 
     <div class="card bg-dark text-black">
@@ -205,9 +222,9 @@
             </div>
         </div>
     </div>
-
+</div>
     <!--end of overlay image 2-->
-
+    <div class="row-lg">
     <!--begin of overlay image 3-->
 
     <div class="card bg-dark text-black">
@@ -222,7 +239,8 @@
             </div>
         </div>
     </div>
-
+    </div>
+</div>
     <!--end of overlay image 3-->
 
     <br><br>
