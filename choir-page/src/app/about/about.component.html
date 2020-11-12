@@ -32,7 +32,9 @@
         max-width: 100%;
         height: auto;
         margin-left: auto;
-        margin-right: auto;
+        flex-direction: column;
+         margin-right: auto;
+
 
     }
 
@@ -58,14 +60,25 @@
     margin: auto;
     padding: 200px;
   }
-   .row-lg{
+   .row-lg, .col-6{
       /*padding: auto;*/
-      /*margin: auto;*/
+      margin: auto;
       padding: 1rem;
+      padding-left: .5rem !important;
+      padding-right: .5rem !important;
+     
       /*margin-bottom: 1rem;*/
       /*border-radius: 0.3rem;*/
 
   }
+  h5 {
+  margin-bottom:.1rem;
+  margin-top: 1rem;
+}
+
+
+
+
 </style>
 
 
@@ -186,6 +199,7 @@
 
     <!--setting the breakpoints for columns-->
 <div class="column">
+
     <div class="row-lg">
     <!--the overlay image 1-->
 
@@ -246,9 +260,9 @@
     <br><br>
     <!--begin of column part 1-->
 
-    <div class="row my-5 mx-5">
+    <div class="row">
 
-        <div class="col-6">
+        <div class="col-6 col-4">
 
             <div class="card bg-dark text-white">
 
@@ -265,7 +279,7 @@
             </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-6 col-4">
 
             <div class="card bg-dark text-white">
                 <img class="container-img" src="assets/images/watch1.jpg" alt="#" style="width: 100%; height: 300px;">
@@ -287,9 +301,10 @@
 
 
         <!-- begin of column part 2-->
+        <br><br>
+        <div class="row">
 
-        <div class="row my-5 mx-5">
-            <div class="col-6">
+            <div class="col-6 col-4">
 
                 <div class="card bg-dark text-black">
 
@@ -300,7 +315,7 @@
                         <p>Bundle up to six Apple services.</p>
                         <p>And enjoy more for less.</p>
                         <div class="card-body">
-                            <br><br> <br>
+                            <br><br>
                             <a href="#" class="card-link"> Learn more <i class="fa fa-angle-right"></i></a>
                             <a href="#" class="card-link"> Try it free <i class="fa fa-arrow-circle-o-up"></i></a>
                         </div>
@@ -309,7 +324,7 @@
             </div>
 
             <br><br>
-            <div class="col-6">
+            <div class="col-6 col-4">
 
                 <div class="card bg-dark text-danger">
                     <img class="container-img" src="assets/images/fittness.jpg" alt="#"
@@ -327,8 +342,6 @@
                     </div>
                 </div>
 
-            </div>
-
         </div>
 
         <!--end of column part 2-->
@@ -337,9 +350,9 @@
         <!--begin of column part 3-->
 
         <hr>
-        <div class="row my-5 mx-5">
+        <div class="row">
 
-            <div class="col-6">
+            <div class="col-6 col-4">
 
                 <div class="card bg-dark text-black">
                     <img class="container-img" src="assets/images/card.jpg" alt="#" style="width: 100%; height: 300px;">
@@ -357,7 +370,8 @@
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-6 col-4">
+                
                 <div class="card bg-dark text-black">
                 
                     <img class="container-img" src="assets/images/air.jpg" alt="#" style="width: 100%; height: 300px;">
@@ -373,119 +387,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            /*</div>*/
         </div>
 
 
         <!--end od column part 3-->
 
 
-
-
-        <div class="row my-5 mx-5">
-            <div class="col-4">
-              <div class="card-wrapper rounded">
-                <div id="card-1" class="card card-rotating text-center z-depth-1-half">
-                  <div class="face front rounded z-depth-3">
-                    <a class="rotate-btn" data-card="card-1">
-                      <div class="view overlay zoom rounded">
-                        <img src="https://www.infin80.com/templates/cabeast2/img/events/w013605.jpg" class="img-fluid rounded"
-                          alt="zoom">
-                      </div>
-                    </a>
-                  </div>
-                  <div class="face back rounded primary-color z-depth-3 ">
-                    <a class="rotate-btn d-flex" data-card="card-1" style="height: 100%;">
-                     <h3 class="grey-text align-self-center">Click here to rotate back</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card-wrapper rounded">
-                <div id="card-2" class="card card-rotating text-center z-depth-1-half">
-                  <div class="face front rounded z-depth-3">
-                    <a class="rotate-btn" data-card="card-2">
-                      <div class="view overlay zoom rounded">
-                        <img src="https://www.infin80.com/templates/cabeast2/img/events/w013605.jpg" class="img-fluid rounded"
-                          alt="zoom">
-                      </div>
-                    </a>
-                  </div>
-                  <div class="face back rounded primary-color z-depth-3 ">
-                    <a class="rotate-btn d-flex" data-card="card-2" style="height: 100%;">
-                     <h3 class="grey-text align-self-center">Click here to rotate back</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-              <div class="col-4">
-              <div class="card-wrapper rounded">
-                <div id="card-3" class="card card-rotating text-center z-depth-1-half">
-                  <div class="face front rounded z-depth-3">
-                    <a class="rotate-btn" data-card="card-3">
-                      <div class="view overlay zoom rounded">
-                        <img src="https://www.infin80.com/templates/cabeast2/img/events/w013605.jpg" class="img-fluid rounded"
-                          alt="zoom">
-                      </div>
-                    </a>
-                  </div>
-                  <div class="face back rounded primary-color z-depth-3 ">
-                    <a class="rotate-btn d-flex" data-card="card-3" style="height: 100%;">
-                     <h3 class="grey-text align-self-center">Click here to rotate back</h3>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+</div>
