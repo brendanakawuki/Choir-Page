@@ -75,9 +75,23 @@
   margin-bottom:.1rem;
   margin-top: 1rem;
 }
+.page-footer{
+  /*background-color: rgb(20, 207, 240);
+  padding: 1rem;
+  grid-row-start: 3;
+  grid-row-end: 3;*/
+  margin: inherit;
+ padding: 30px;
+  background: linear-gradient(70deg, #0ebeff, #ffdd40, #ae63e4, #47cf73);
+}
 
+<!--image button-->
 
-
+.btn-image {
+    background-image: url('https://brandflow.net/assets/img/featured/mdb-prolog.jpg') !important;
+    background-size: contain;
+    background-image: url('assets/images/air.jpg') !important;
+}
 
 </style>
 
@@ -224,7 +238,7 @@
 
     <div class="card bg-dark text-black">
        
-            <img class="container-img" src="assets/images/ip.jpg" alt="#" style="width: 100%; height: 300px;">
+            <img class="container-img" src="assets/images/phone.jpg" alt="#" style="width: 100%; height: 300px;">
         <div class="card-img-overlay">
             <br><br> <br><br>
             <h5 class="card-title">iphone 12 Pro Max</h5>
@@ -327,12 +341,12 @@
             <div class="col-6 col-4">
 
                 <div class="card bg-dark text-danger">
-                    <img class="container-img" src="assets/images/fittness.jpg" alt="#"
+                    <img class="container-img" src="assets/images/fit.jpg" alt="#"
                         style="width: 100%; height: 300px;">
                     <div class="card-img-overlay">
                         <br><br>
                         <h5 class="card-title"><strong><i class="fa fa-apple mr-3"></i>WATCH </strong></h5>
-                        <P class="text-warning">comming late 2020</P>
+                        <P class="text-Info">comming late 2020</P>
                         <p>A new fitness experience powered by Apple watch</p>
                         <div class="card-body">
                             <br><br>
@@ -390,27 +404,67 @@
             </div>
         </div>
 
-   <!--end od column part 3-->
+   <!--end od column part 3-->  
 
+<!--image button-->
 
+   <button type="button" class="btn-image white-text">Primary</button>
 
+   <button type="button" class="btn-image white-text">
+     <p>Powerful. Colorful. Wonderful.</p></button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+       <!--end of image-->   
 
 </div>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+   
+    <!-- Footer Elements -->
+    <div class="container-fluid">
+
+
+<!--Grid row-->
+<div class="row">
+   
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+
+      <!-- Form -->
+      <form class="form-inline">
+        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+      </form>
+      <!-- Form -->
+
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+
+      <form class="input-group">
+        <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button outline="true" size="sm" type="button"> Sign up</button>
+        </div>
+      </form>
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!--Grid row-->
+
+</div>
+<!-- Footer Elements -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3 px-3">© 2020 Copyright:
+  <a href="#"> MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
