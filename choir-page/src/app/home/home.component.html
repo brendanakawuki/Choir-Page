@@ -1,273 +1,331 @@
-<style> 
-  .card-body, .card-img-top {
-    width: 18rem;
-    height: 250px;
-    margin: auto;
-    padding: auto;
+<style>
+  .card{
+      background: url('assets/images/youth.jpg') repeat scroll 0% 0% transparent;
+      /* background: #ff0000;
+      opacity: 0.4; */
   }
-  .card-title, .card-footer {
-    color: blue;
-    font-family: 'Times New Roman', Times;
-    font-style: normal;
+
+  .carousel-caption {
+      background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(174, 180, 0, 0.7), rgba(255, 255, 255, 0));
   }
-  .card-text {
-    text-transform: lowercase;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: oblique;
-    font-weight: 50;
+  .column {
+      background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(0, 50, 111, 0.8), rgba(255, 255, 255, 0));
   }
-  .navbar, .collapse, .nav-title, .navbar-toggler {
-    background-color: grey;
+  .item active {
+      background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(188, 0, 15, 0.7), rgba(255, 255, 255, 0));
   }
-  
-  /*.nav-title {
-    color: black;
-  }*/
-a, .btn btn-primary {
-color: black;
-font-weight: 500;
-font-family: Georgia, 'Times New Roman', Times, serif;
+.col-md-12{
+  display: block;
+  flex: 1 1 auto;
+}
+
+.col-md-12 {
 
 }
+.ms-footbar, .col-md-3 {
+  display: block;
+ align-self: start;;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(17, 16, 16);
+   color: white;
+   text-align: center;
+   padding: au
+ 
+}
 h1{
-  font-size: 24px;
-  text-emphasis-color:blue;
-  color: gray;
-  font-family: 'Times New Roman', Times, serif;
+  color: navy;
 }
-.page-footer{
-  /*background-color: rgb(20, 207, 240);*/
-  padding: 1rem;
-  margin: inherit;
-  background: linear-gradient(70deg, #0ebeff, #ffdd40, #ae63e4, #47cf73);
-}
-p{
-  font: outline;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
-.pb-3{
-  font-size: 20px;
-  font-family: 'Tmes New Roman' Helvetica;
-  color: rgb(255, 255, 255);
-}
+
 
 
 
 </style>
 
+
+
 <div class="container">
-    <div class="text-center">
-        <h1>WELCOME TO IMMACULATE CONCEPTION CHOIR PAGE</h1>
-    </div>
-    <div class="align-center">
-
-
-
-
-      <div class="row mx-1">
-
-        <!--Grid column-->
-        <div class="col-md-12 mb-4">
-            <div class="card card-image" style="background-image: url(assets/images/youth.jpg);">
-                <div class="text-white snow text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-                    <div>
-                        <h6 class="purple-text"><i class="fa fa-plane"></i><strong> Travel With Us</strong></h6>
-                        <h3 class="card-title py-3 font-weight-bold"><strong>ADORABLE MOMMENTS, PRAISING THE LORD</strong></h3>
-                        <p class="pb-3"><strong>Praising and loving God is all what we do, in Good times and in Bad times.
-                          How precious is your name Father Lord, we adore u lord.</strong>
-                        </p>
-                        <a class="btn btn-secondary btn-rounded"><i class="fa fa-clone left"></i> View project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Grid column-->
-     </div>
-
-
-        
-
-
-
-
-
-
-        <!--test-->
-<br>
-
-<div class="card-columns">
-  <div class="container" style="width: 18rem;">
-    <img class="card-img-top" src="assets/images/child.jpg" alt="#">
-    <div class="card-body">
-      <h5 class="card-title">MUSIC</h5>
-      <p class="card-text">This includes the differnt voices plus people playing musical instruments.</p>
-    <b><a href="#" class="btn btn-primary">VIEW AVAILABLE INSTRUMENTS</a></b>
-    </div>
-  <b><div class="card-footer bg-transparent border-success">MUSIC FOR THE SOUL</div></b>
+  <div class="text-center">
+      <h1>WELCOME TO IMMACULATE CONCEPTION CHOIR PAGE</h1>
   </div>
-  
-  <br>
-  
-  
-  <div class="container-fluid" style="width: 18rem;">
-    <img class="card-img-top" src="assets/images/choir.jpg" alt="#">
-    <div class="card-body">
-      <h5 class="card-title">CHOIR</h5>
-      <p class="card-text">This includes the differnt voices plus people playing musical instruments.</p>
-      <b><a href="#" class="btn btn-primary"> VIEW CHOIR PRACTICES</a></b>
-    </div>
-    <b><div class="card-footer bg-transparent border-success">WE ARE FAMILY</div></b>
-  </div>
-  
-  <br>
-  
-  <div class="container-fluid" style="width: 18rem;">
-    <img class="card-img-top" src="assets/images/mass.jpg" alt="#">
-    <div class="card-body">
-      <h5 class="card-title">MASS</h5>
-      <p class="card-text">This includes the differnt voices plus people playing musical instruments.</p>
-    <b><a href="#" class="btn btn-primary">VIEW READINGS</a></b>
-    </div>
-  <b><div class="card-footer bg-transparent border-success">EVANGELIZE YOUR HEART</div></b>
-   
-  </div>
-  
-  </div>
-  <br>
-    </div>
+  <div class="align-center">
 
 
-<!-- Footer -->
-<footer class="page-footer">
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
 
-    <!-- Grid row -->
     <div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+      <!--Grid column-->
+      <div class="col-md-12 mb-4">
+          <div class="card card-image" style="background-image: url(assets/images/youthchoir.jpg);">
+              <div class="text-white snow text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                  <div>
+                      <h6 class="purple-text"><i class="fa fa-plane"></i><strong> Travel With Us</strong></h6>
+                      <h3 class="card-title py-3 font-weight-bold"><strong>ADORABLE MOMMENTS, PRAISING THE LORD</strong></h3>
+                      
+                      <a class="btn btn-secondary btn-rounded"><i class="fa fa-clone left"></i> View project</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      <!--Grid column-->
+  
 
-        <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Choir Content</h5>
-        <p>Please feel free to join our choir.</p>
-        <p>Here are some of the contents found in the mighty immaculate conception choir,
-          we are glad to hear your views plud the comments for the better improvement.</p>
 
-      </div>
-      <!-- Grid column -->
 
-      <hr class="clearfix w-100 d-md-none">
 
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+        <!-- Wrapper for slides -->
+        <div class="container-fluid">
+          <div class="item active">
+            <div class="container">
+              <div class="column">
+                <div class="row-lg-6 row-md7">
+                  
+                    <h1 class="color-default no-mt mb-4 animated zoomInDown animation-delay-7"><span class="color-default typed-text"></span></h1>
+                    <!-- <div class="col-md-12"> -->
+                      <br>
+                      <div class="row-md-6">
+                        <button class="btn btn-block btn-primary btn-raised btn-app wow zoomInUp animation-delay-2">
+                          <div class="btn-container">
+                            <i class="fa fa-music" aria-hidden="true"></i>
+                            <strong>Music</strong><br>
+                            <span>For all the choir</span>
+                          </div>
+                        </button>
+                      </div>
+                      <br>
+                      <div class="row-md-6">
+                        <button class="btn-block btn btn-primary  btn-raised btn-app wow zoomInUp animation-delay-2">
+                          <div class="btn-container">
+                            <i class="fa fa-user-friends"></i>
+                            <strong>Choir</strong><br>
+                            <span>For all the choir</span>
+                          </div>
+                        </button>
+                      </div>
+                    <!-- </div> -->
+                    <br>
+                    <div class="row-md-6">
+                      <button class="btn-block btn btn-primary btn-raised btn-app wow zoomInUp animation-delay-2">
+                        <div class="btn-container">
+                          <i class="fa fa-broadcast-tower"></i>
+                          <strong>Voices</strong><br>
+                          <span>For all the choir</span>
+                        </div>
+                      </button>
+                    </div>
+                    <br>
+                    <div class="row-md-6">
+                      <button class="btn-block btn btn-primary btn-raised btn-app wow zoomInUp animation-delay-2">
+                        <div class="btn-container">
+                          <i class="fa fa-church"></i>
+                          <strong> church Practices</strong><br>
+                          <span>Fully Responsive</span>
+                        </div>
+                      </button>
+                    </div>
 
-        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+                  
 
-        <ul class="list-unstyled">
-          <li>
-            <p>
-              <a href="#!">PROJECTS</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!">ABOUT US</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!">SERVICES</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="#!">CONTACTS</a>
-            </p>
-          </li>
-        </ul>
+                    
+</div>
+</div>
+<br>
 
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-
-        <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <p>
-              <i class="fa fa-home" aria-hidden="true" style="font-size:30px;"></i> Kampala, UG
-              
-            </p>
-          </li>
-          <li>
-            <p>
-              <i class="fa fa-envelope-open" aria-hidden="true" style="font-size:30px;"></i> info@example.com
-            </p>
-          </li>
-          <li>
-            <p>
-              <i class="fa fa-phone" aria-hidden="true" style="font-size:30px;"></i> + 256 7778645732
-            </p>
-          </li>
-          <li>
-            <p>
-              <i class="fa fa-print" aria-hidden="true" style="font-size:30px;"></i> + 01 234 567 88
-            </p>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none">
-
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
-
-        <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
-
-        <!-- Facebook -->
-        
-          <a href="#"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size:30px;"></i></a>
-        
-        <br>
-        <!-- Twitter -->
-      
-        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true" style="font-size:30px;"></i></a>
-        
-        <br>
-        <!-- Google +-->
-
-        <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true" style="font-size:30px;"></i></a>
-        
-        <br>
-        <!-- Dribbble -->
+<section id="showcase">    
+  <div class="container">
+    <div class="row">
        
-        <a href="#"><i class="fa fa-dribbble" aria-hidden="true" style="font-size:30px;"></i></a>
-        
-        <br>
-        
-        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:30px;"></i></a>
-        
-      </div>
-     
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 px-3">© 2020 Copyright:
-    <a href="#"> MDBootstrap.com</a>
+      <div class="col-md-6 col-sm-6 ">
+        <h1 class="color-primary">Choir Member</h1>
+        <hr class="color">
+        <p class="lead " style="text-align: justify;">
+        we offer different services
+        </p>
+        <p class="lead" style="text-align: justify;">our solution is to be available fo each and every function.</p>
+      </div> 
+      <div class="col-md-6 col-sm-6">
+        <div class="showcase-left">
+        <img src="assets/images/child.jpg" alt="" class="img-responsive center-block text-center animated zoomInDown animation-delay-5"/>
+      </div> 
+      <a href="#" class="btn btn-default btn-lg showcase-btn">read more</a>
+    </div> 
+    </div>
   </div>
-  <!-- Copyright -->
+</section>
+<!-- 0726006995 -->
 
+  <br>
+
+  <section id="showcase" style="background-color: #f7eeee;">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="showcase-right">
+          <img src="assets/images/choir.jpg" alt="" class="img-responsive center-block text-center animated zoomInDown animation-delay-5"/>
+        </div> 
+        <a href="#" class="btn btn-default btn-lg showcase-btn">read more</a> 
+      </div>
+        <div class="col-md-6 col-sm-6">
+          <h1 class="color-light">Web Apps</h1>
+          <hr class="color">
+          <p class="lead color-light" style="text-align: justify;">
+            Immaculate conception choir is able to sing on any available function.
+          </p>
+          <p class="lead color-light" style="text-align: justify;">
+          The goal is no more stress about the choir, but to provide solution especially on charges. We help you in Planning, Designing, 
+          Developing.
+          </p>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+<br>
+
+  <section id="showcase">
+    <div class="container">
+      <div class="row">
+         
+        <div class="col-md-6 col-sm-6">
+          <h1 class="color-primary">Other Services</h1>
+          <hr class="color">
+          <ul class="list-unstyled hand-list">
+                <li class="animated fadeInLeft animation-delay-2">
+                    <p class="lead"><i class="color-info fa fa-label"></i> church &amp; Consultancy</p>
+                </li>
+                <li class="animated fadeInLeft animation-delay-4">
+                  <p class="lead"><i class="color-info fa fa-label"></i> available &amp;  services</p>
+                </li>
+                <li class="animated fadeInLeft animation-delay-6">
+                  <p class="lead"><i class="color-info fa fa-label"></i> Design &amp; Development</p>
+                </li>
+                <li class="animated fadeInLeft animation-delay-8">
+                  <p class="lead"><i class="color-info fa fa-label"></i> Enterprise Resource Planning Solutions</p>
+                </li>
+                <li class="animated fadeInLeft animation-delay-10">
+                  <p class="lead"><i class="color-info fa fa-label"></i> Social Media Marketing</p>
+                </li>
+                <li class="animated fadeInLeft animation-delay-10">
+                  <p class="lead"><i class="color-info fa fa-label"></i> Content Generation</p>
+                </li>
+              </ul>
+        </div> 
+        <div class="col-md-6 col-sm-6">
+          <img src="assets/images/mass.jpg" alt="#" class="img-responsive mt-6 center-block text-center animated zoomInDown animation-delay-5"/>
+        </div> 
+  
+      </div>
+    </div>
+  </section>
+
+
+
+<div class="container">
+  
+  <aside class="ms-footbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 ms-footer-col">
+          <div class="ms-footbar-block">
+            <h3 class="ms-footbar-title">Sitemap</h3>
+            <ul class="list-unstyled ms-icon-list three_cols">
+              <li class="active">
+                  <a href=""><i class="fa fa-home"></i> Home</a>
+              </li>
+              <li class="">
+                    <a href=""><i class="fa fa-info-circle"></i> About</a>
+              </li>
+              <li class="">
+                    <a href=""><i class="fa fa-briefcase"></i> Services</a>
+              </li>
+              <li class="">
+                    <a href=""><i class="fa fa-code"></i> Projects</a>
+              </li>
+              <li class="">
+                    <a href=""><i class="fa fa-blogger"></i> Blog</a>
+              </li>
+              <li class="">
+                    <a href=""><i class="fa fa-envelope-open"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ms-footbar-block">
+            <h3 class="ms-footbar-title">Subscribe</h3>
+            <p class="">Subscribe to our newsletters</p>
+            <form id="subscribeForm" method="post">
+              <div class="form-group label-floating mt-2 mb-1">
+                <div class="input-group ms-input-subscribe">
+                  <label class="control-label" for="ms-subscribe">
+                    <i class="zmdi zmdi-email"></i> Email Adress</label>
+                  <input type="email" id="ms-subscribe" name="subscription_email" class="form-control" required> </div>
+              </div>
+              <button class="ms-subscribre-btn" type="submit">Subscribe <i class="color-danger-light fa fa-envelope-open"></i></button>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 col-sm-5 ms-footer-col ms-footer-text-right">
+          <div class="ms-footbar-block">
+            <div class="ms-footbar-title">
+              <span class="ms-logo ms-logo-white ms-logo-sm mr-1">IMC</span>
+              <h3 class="no-m ms-site-title">Immaculate Conception
+                <span>choir</span>
+              </h3>
+            </div>
+            <address class="no-mb">
+              <p>
+                <i class="color-danger-light fa fa-pin mr-1"></i> Gayaza Road</p>
+              <p>
+                <i class="color-warning-light fa fa-map mr-1"></i> Kampala, Uganda</p>
+              <p>
+                <i class="color-info-light fa fa-envelope-open mr-1"></i>
+                <a href="">info@immaculateconceptionchoir.com</a>
+              </p>
+              <p>
+                <i class="color-royal-light fa fa-phone mr-1"></i>+256 7786438032  </p>
+              <p>
+                <i class="color-success-light fa fa-fax mr-1"></i>+256 757638032 </p>
+            </address>
+          </div>
+
+<br>
+
+          <div class="ms-footbar-block">
+            <h3 class="ms-footbar-title">Social Media</h3>
+            <div class="ms-footbar-social">
+              <a href="" target="_blank" class="btn-circle btn-facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="" target="_blank" class="btn-circle btn-twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="" target="_blank" class="btn-circle btn-instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+
+
+  <footer class="ms-footer">
+    <div class="container">
+      <p>&copy; 2020 Immaculate Conception choir Co., | All Rights Reserved | <a href="#" class="color-light">Terms</a> | <a href="#" class="color-light">Privacy</a> | <a href="#" class="color-light">Trademarks</a></p>
+    </div>
+  </footer>
+  <div class="btn-back-top">
+    <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised ">
+      <i class="fa fa-long-arrow-up"></i>
+    </a>
+  </div>
+</div>
 
 
 
@@ -279,9 +337,6 @@ p{
 
 
 
-
-
-
-
-
-
+                   
+                  
+                  
