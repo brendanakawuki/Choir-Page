@@ -19,8 +19,9 @@
   flex: 1 1 auto;
 }
 
-.col-md-12 {
-
+h6, .btn {
+background-attachment: fixed;
+color: rgb(100, 2, 129);
 }
 .ms-footbar, .col-md-3 {
   display: block;
@@ -28,15 +29,46 @@
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: rgb(17, 16, 16);
+   background-color: #2b0101;
    color: white;
    text-align: center;
    padding: au
  
 }
-h1{
+h1, h3 {
   color: navy;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+.card {
+  animation-duration: 8s;
+  animation-name: card;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+}
+
+@keyframes card {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+
+.card-body, .card-img-top {
+    width: 18rem;
+    height: 250px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #e2f6f7;
+  }
 
 
 
@@ -61,8 +93,8 @@ h1{
           <div class="card card-image" style="background-image: url(assets/images/youthchoir.jpg);">
               <div class="text-white snow text-center d-flex align-items-center rgba-black-strong py-5 px-4">
                   <div>
-                      <h6 class="purple-text"><i class="fa fa-plane"></i><strong> Travel With Us</strong></h6>
-                      <h3 class="card-title py-3 font-weight-bold"><strong>ADORABLE MOMMENTS, PRAISING THE LORD</strong></h3>
+                      <h6 class="purple-text text-center"><i class="fa fa-plane"></i><strong>Travel With Us</strong></h6>
+                      <h3 class="card-title py-3 font-weight-bold text-warning"><strong>ADORABLE MOMMENTS, PRAISING THE LORD</strong></h3>
                       
                       <a class="btn btn-secondary btn-rounded"><i class="fa fa-clone left"></i> View project</a>
                   </div>
@@ -125,13 +157,60 @@ h1{
                         </div>
                       </button>
                     </div>
-
                   
-
                     
 </div>
 </div>
+
 <br>
+<br>
+
+
+
+<div class="card-columns">
+  <div class="container" style="width: 18rem;">
+    <img class="card-img-top" src="assets/images/child.jpg" alt="#">
+    <div class="card-body">
+      <h5 class="card-title">MUSIC</h5>
+      <p class="card-text">This includes the differnt voices plus people playing musical instruments.</p>
+    <b><a href="#" class="btn btn-primary">AVAILABLE INSTRUMENTS</a></b>
+    </div>
+  <b><div class="card-footer bg-transparent border-success">MUSIC FOR THE SOUL</div></b>
+  </div>
+  <br>
+  <br>
+  
+  <div class="container-fluid" style="width: 18rem;">
+    <img class="card-img-top" src="assets/images/choir.jpg" alt="#">
+    <div class="card-body">
+      <h5 class="card-title">CHOIR</h5>
+      <p class="card-text">This includes the differnt voices plus people playing musical instruments.</p>
+      <b><a href="#" class="btn btn-primary"> VIEW CHOIR PRACTICES</a></b>
+    </div>
+    
+    <b><div class="card-footer bg-transparent border-success">WE ARE FAMILY</div></b>
+  </div>
+  
+  <br>
+  
+  <div class="container-fluid" style="width: 18rem;">
+    <img class="card-img-top" src="assets/images/mass.jpg" alt="#">
+    <div class="card-body">
+      <h5 class="card-title">MASS</h5>
+      <p class="card-text">This includes the differnt voices plus people playing musical instruments.</p>
+    <b><a href="#" class="btn btn-primary">VIEW READINGS</a></b>
+    </div>
+  <b><div class="card-footer bg-transparent border-success">EVANGELIZE YOUR HEART</div></b>
+   
+  </div>
+  
+  </div>
+
+<br>
+<br>
+
+
+
 
 <section id="showcase">    
   <div class="container">
@@ -139,7 +218,7 @@ h1{
        
       <div class="col-md-6 col-sm-6 ">
         <h1 class="color-primary">Choir Member</h1>
-        <hr class="color">
+        <hr class="color" style="background-color: red;">
         <p class="lead " style="text-align: justify;">
         we offer different services
         </p>
@@ -149,7 +228,7 @@ h1{
         <div class="showcase-left">
         <img src="assets/images/child.jpg" alt="" class="img-responsive center-block text-center animated zoomInDown animation-delay-5"/>
       </div> 
-      <a href="#" class="btn btn-default btn-lg showcase-btn">read more</a>
+      <a href="#" class="btn btn-default btn-lg showcase-btn">Read more</a>
     </div> 
     </div>
   </div>
@@ -165,11 +244,11 @@ h1{
           <div class="showcase-right">
           <img src="assets/images/choir.jpg" alt="" class="img-responsive center-block text-center animated zoomInDown animation-delay-5"/>
         </div> 
-        <a href="#" class="btn btn-default btn-lg showcase-btn">read more</a> 
+        <a href="#" class="btn btn-default btn-lg showcase-btn">Read more</a> 
       </div>
         <div class="col-md-6 col-sm-6">
           <h1 class="color-light">Web Apps</h1>
-          <hr class="color">
+          <hr class="color" style="background-color: red;">
           <p class="lead color-light" style="text-align: justify;">
             Immaculate conception choir is able to sing on any available function.
           </p>
@@ -184,19 +263,24 @@ h1{
 
 <br>
 
-  <section id="showcase">
+  <section id="showcase" style="background-color: hsl(323, 81%, 89%); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
     <div class="container">
       <div class="row">
          
         <div class="col-md-6 col-sm-6">
+
+          <div class="col-md-6 col-sm-6">
+            <img src="assets/images/mass.jpg" alt="#" class="img-responsive mt-6 center-block text-center animated zoomInDown animation-delay-5"/>
+          </div> 
+
           <h1 class="color-primary">Other Services</h1>
-          <hr class="color">
+          <hr class="color" style="background-color: red;">
           <ul class="list-unstyled hand-list">
                 <li class="animated fadeInLeft animation-delay-2">
-                    <p class="lead"><i class="color-info fa fa-label"></i> church &amp; Consultancy</p>
+                    <p class="lead"><i class="color-info fa fa-label"></i> Church &amp; Consultancy</p>
                 </li>
                 <li class="animated fadeInLeft animation-delay-4">
-                  <p class="lead"><i class="color-info fa fa-label"></i> available &amp;  services</p>
+                  <p class="lead"><i class="color-info fa fa-label"></i> Available &amp;  Services</p>
                 </li>
                 <li class="animated fadeInLeft animation-delay-6">
                   <p class="lead"><i class="color-info fa fa-label"></i> Design &amp; Development</p>
@@ -212,15 +296,15 @@ h1{
                 </li>
               </ul>
         </div> 
-        <div class="col-md-6 col-sm-6">
-          <img src="assets/images/mass.jpg" alt="#" class="img-responsive mt-6 center-block text-center animated zoomInDown animation-delay-5"/>
-        </div> 
+       <!--jpg--> 
   
       </div>
     </div>
   </section>
 
-
+<br>
+<br>
+<br>
 
 <div class="container">
   
@@ -229,25 +313,25 @@ h1{
       <div class="row">
         <div class="col-md-4 ms-footer-col">
           <div class="ms-footbar-block">
-            <h3 class="ms-footbar-title">Sitemap</h3>
+            <h3 class="ms-footbar-title" style="background-color: pink;">Sitemap</h3>
             <ul class="list-unstyled ms-icon-list three_cols">
               <li class="active">
-                  <a href=""><i class="fa fa-home"></i> Home</a>
+                  <a href=""><i class="fa fa-home" style="background-color: white;"></i> Home</a>
               </li>
               <li class="">
-                    <a href=""><i class="fa fa-info-circle"></i> About</a>
+                  <a href=""><i class="fa fa-info-circle" style="background-color: white;"></i> About</a>
               </li>
               <li class="">
-                    <a href=""><i class="fa fa-briefcase"></i> Services</a>
+                    <a href=""><i class="fa fa-briefcase" style="background-color: white;"></i> Services</a>
               </li>
               <li class="">
-                    <a href=""><i class="fa fa-code"></i> Projects</a>
+                    <a href=""><i class="fa fa-code" style="background-color: white;"></i> Projects</a>
               </li>
               <li class="">
                     <a href=""><i class="fa fa-blogger"></i> Blog</a>
               </li>
               <li class="">
-                    <a href=""><i class="fa fa-envelope-open"></i> Contact</a>
+                    <a href=""><i class="fa fa-envelope-open" style="background-color: white;"></i> Contact</a>
               </li>
             </ul>
           </div>
@@ -266,14 +350,14 @@ h1{
             </form>
           </div>
         </div>
+<br>
 
-
-        <div class="col-md-3 col-sm-5 ms-footer-col ms-footer-text-right">
+        <div class="col-lg-6 col-lg-6 ms-footer-col ms-footer-text-right">
           <div class="ms-footbar-block">
             <div class="ms-footbar-title">
-              <span class="ms-logo ms-logo-white ms-logo-sm mr-1">IMC</span>
+              <span class="ms-logo ms-logo-white ms-logo-sm mr-1" style="background-color: pink;">ICC</span>
               <h3 class="no-m ms-site-title">Immaculate Conception
-                <span>choir</span>
+                <span>Choir</span>
               </h3>
             </div>
             <address class="no-mb">
@@ -291,8 +375,6 @@ h1{
                 <i class="color-success-light fa fa-fax mr-1"></i>+256 757638032 </p>
             </address>
           </div>
-
-<br>
 
           <div class="ms-footbar-block">
             <h3 class="ms-footbar-title">Social Media</h3>
@@ -313,7 +395,8 @@ h1{
     </div>
   </aside>
 
-
+<br>
+<hr>
 
   <footer class="ms-footer">
     <div class="container">
@@ -328,9 +411,9 @@ h1{
 </div>
 
 
-
-
 </div>
+
+
 
 
 
