@@ -1,7 +1,305 @@
-<div class="container">
-    <div class="text-center">
-        <h1 class="text-primary">
-            This is contact page
-        </h1>
+<style>
+    .page-content {
+        display: flex;
+
+    }
+
+    .form-v2-content {
+        background-color: lightblue;
+    }
+
+    .contact-img {
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 10px 20px;
+
+
+    }
+     
+</style>
+
+
+
+
+<div class="container-fluid">
+
+
+    <!--<div class="row">
+        <div class="col-md-4 col-lg-4"></div>
+        <div class="col-md-4 col-lg-4">
+            <div class="form-v2-content">
+
+                <form class="form-detail" action="#" method="post" id="myform">
+                    <h2>Registration Form</h2>
+                    <br>
+
+                    <div class="form-group col-lg-12">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" name="full_name" id="full_name"
+                            class="btn btn-success padding-top input-text" placeholder="ex: brenda primah">
+                    </div>
+                    <br>
+                    <div class="form-group col-lg-12">
+                        <label for="your_email">Your Email:</label>
+                        <input type="text" name="your_email" id="your_email" class="btn btn-Info padding-top input-text"
+                            required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                    </div>
+                    <br>
+                    <div class="form-group col-lg-12">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password"
+                            class="input-text btn btn-danger padding-top" required>
+                    </div>
+                    <br>
+                    <div class="form-group col-lg-12">
+                        <label for="comfirm-password">Confirm Password:</label>
+                        <input type="password" name="confirm_password" id="confirm_password"
+                            class="input-text btn btn-success padding-top" required>
+                    </div>
+                    <br>
+                    <div class="form-checkbox">
+                        <label class="container">
+                            <p>By signing up, you agree to the <a href="#" class="text">Play Term of Service</a></p>
+                            <input type="checkbox" name="agree" id="agree">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-row-last">
+                        <input type="submit" name="register" class="register" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4"></div>
+    </div>-->
+    <br>
+
+<!--contact us added-->
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="assets/images/choir.jpg"  style=" width: 100%; height: 200px;" class="card-img" alt="#">
+      </div>
+      <div class="col-md-8" style="background:rgb(203, 203, 250);"S>
+        <div class="card-body" style="background:rgb(217, 217, 245); width: auto; height: auto;">
+          <h5 class="card-title">Contact Us, we're happy to help you.</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          
+        </div>
+      </div>
     </div>
+         <br>
+       <div class="card" style="background: red;">
+        <p> CONTACT US <i class="fa fa-home">/ Home</i></p>
+        </div>
+
+        <div class="lead">
+            <br>
+            <p>Frequently asked questions:</p>
+        </div>
+        
+        
+        <div class="panel-heading" style="background: rgb(239, 239, 243);" >
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040">
+                What are the Member Service Center / Call Center hours?
+              <i class="indicator fa fa-chevron-down  pull-right"></i></a>
+            </h4>
+          </div>
+        <br>
+
+        <div class="panel-heading" style="background: rgb(239, 239, 243);" >
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040">
+                How do I find my member number?
+              <i class="indicator fa fa-chevron-down  pull-right"></i></a>
+            </h4>
+          </div>
+          <br>
+
+          <div class="panel-heading" style="background: rgb(239, 239, 243);" >
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040">
+                Who can join?
+              <i class="indicator fa fa-chevron-down  pull-right"></i></a>
+            </h4>
+          </div>
+          <br>
+
+          <div class="panel-heading" style="background: rgb(239, 239, 243);" >
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040">
+                How can join?
+              <i class="indicator fa fa-chevron-down  pull-right"></i></a>
+            </h4>
+          </div>
+          <br>
+          <hr> 
+          
+          <div class="row form-group">
+            <div class="col-sm-4"><label id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_FirstName_lb" class="required" for="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_FirstName_txtText">First Name:</label></div>
+            
+            <div class="col-sm-8"><div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_ncpfirstname" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                        <input name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$FirstName$txtText" type="text" maxlength="500" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_FirstName_txtText" class="form-control" />
+            <input type="hidden" name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$FirstName$exWatermark_ClientState" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_FirstName_exWatermark_ClientState" />
+                    </div></div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-sm-4"><label id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_LastName_lb" class="required" for="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_LastName_txtText">Last Name:</label></div>
+                
+                <div class="col-sm-8"><div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_ncplastname" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                            <input name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$LastName$txtText" type="text" maxlength="100" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_LastName_txtText" class="form-control" />
+                <input type="hidden" name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$LastName$exWatermark_ClientState" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_LastName_exWatermark_ClientState" />
+                        </div></div>
+                </div>
+            
+            <div class="row form-group">
+                    <div class="col-sm-4"><label id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Phone_lb" class="required" for="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Phone_txtText">Phone:</label></div>
+                    
+                    <div class="col-sm-8"><div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_ncpphone" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                <input name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$Phone$txtText" type="text" maxlength="500" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Phone_txtText" class="form-control" />
+                    <input type="hidden" name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$Phone$exWatermark_ClientState" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Phone_exWatermark_ClientState" />
+                            </div></div>
+                    </div>
+
+            <div class="row form-group">
+                        <div class="col-sm-4"><label id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Email_lb" class="required" for="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Email_txtText">Email:</label></div>
+                        
+                        <div class="col-sm-8"><div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_ncpemail" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                    <input name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$Email$txtText" type="text" maxlength="500" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Email_txtText" class="form-control" />
+                        <input type="hidden" name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$Email$exWatermark_ClientState" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_Email_exWatermark_ClientState" />
+                                </div></div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-sm-4"><label id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_HowCanWeHelp_lb" class="required" for="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_HowCanWeHelp_dropDownList">How can we help you?:</label></div>
+                            
+                            <div class="col-sm-8"><div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_ncphowcanwehelp" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                        <select name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$HowCanWeHelp$dropDownList" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_HowCanWeHelp_dropDownList" class="DropDownField form-control">
+                                            <option selected="selected" value="General_Question">General Question</option>
+                                            <option value="Account_Question">Account Question</option>
+                                            <option value="Business">Business</option>
+                                            <option value="Wealth">Wealth Management</option>
+                            
+                                        </select>
+                            <div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_HowCanWeHelp_autoComplete" class="autocomplete">
+                                
+                                
+                            </div>
+                                    </div></div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-sm-4"><label id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_CommentsEncrypted_lb" class="required" for="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_CommentsEncrypted_txtText">Comment/Question?:</label></div>
+                                
+                                <div class="col-sm-8"><span class="small help-block">Do not send sensitive information, such as social security numbers or account numbers, through this form.&nbsp;</span><div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_ncpcommentsencrypted" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                            <textarea name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$CommentsEncrypted$txtText" rows="5" cols="20" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_CommentsEncrypted_txtText" class="form-control">
+                                </textarea>
+                                
+                                        </div></div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-sm-4"><span id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_CAPTCHA_lb" class="sr-only">CAPTCHA:</span></div>
+                                    
+                                    <div class="col-sm-8"><div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_ncpcaptcha" class="EditingFormControlNestedControl editing-form-control-nested-control">
+                                                <div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_CAPTCHA_pnlRecaptchaControl">
+                                                    <div id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_CAPTCHA_pnlCaptchaWrap" class="cms-recaptcha-wrap" data-rendersettings="{
+                                      &quot;sitekey&quot;: &quot;6Lf6uwoTAAAAAJz76qpfTHLnimQ8JvAh9_IMkDw5&quot;,
+                                      &quot;theme&quot;: &quot;light&quot;,
+                                      &quot;type&quot;: &quot;image&quot;,
+                                      &quot;size&quot;: &quot;normal&quot;
+                                    }">
+                                    
+                                                    </div><noscript>
+
+                         <div>
+    <div style="width: 302px; height: 422px; position: relative;">
+      <div style="width: 302px; height: 422px; position: absolute;">
+        <iframe src="https://www.google.com/recaptcha/api/fallback?k=6Lf6uwoTAAAAAJz76qpfTHLnimQ8JvAh9_IMkDw5&hl=en"
+                frameborder="0" scrolling="no"
+                style="width: 302px; height:422px; border-style: none;">
+        </iframe>
+      </div>
+    </div>
+    <div style="width: 300px; height: 60px; border-style: none;
+                   bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
+                   background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+      <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                   class="g-recaptcha-response"
+                   style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
+                          margin: 10px 25px; padding: 0px; resize: none;" >
+      </textarea>
+    </div>
+  </div>
+</noscript>
+			</div>
+		</div></div>
 </div>
+ 
+        <div class="col-sm-offset-4 col-sm-8"><input type="submit" name="p$lt$ctl06$pageplaceholder$p$lt$ctl02$editabletext2$ucEditableText$widget1$ctl00$viewBiz$btnOK" value="Submit" id="p_lt_ctl06_pageplaceholder_p_lt_ctl02_editabletext2_ucEditableText_widget1_ctl00_viewBiz_btnOK" class="FormButton btn btn-primary" /></div>
+
+  </div>
+  <br>
+
+
+<!-- Sidebar -->
+<div class="column">
+<div id="sidebar" class="row-md-4 row-sm-4 personal">
+      
+    <div class="well text-center"><a class="btn btn-bock btn-primary nospeedbump" href="https://oac.fmsiportal.com/AppointmentWidget/service?urlCode=AOMFL04HS29XWOHL1POI" target="_blank">Make an Appointment</a></div>
+
+
+
+
+
+    <h3>Navigation</h3>
+    <div class="container" style="background:rgb(31, 31, 32);">
+<div class="list-group">
+
+  <ul id="menuElem">
+      <li>
+          <a href="/checking-1">Perks</a>
+      </li>
+      <li>
+        <a href="/">Home</a>
+    </li>
+    <li>
+        <a href="/cash-back">Cash Back</a>
+    </li>
+    <li>
+        <a href="/financial-seminars">Financial Seminars</a>
+    </li>
+    <li>
+        <a href="/careers">Careers</a>
+    </li>
+    <li class="Highlighted">
+        <a href="/contact-us">Contact Us</a>
+    </li>
+
+
+      </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
