@@ -1,19 +1,34 @@
 <style>
 .card-img, .card-img-overlay {
-    max-width: 80%;
+  max-width: 80%;
   height: auto;
   
   }
   .card {
-  background-image: url(assets/images/e.jpg);
+  /*background-image: url(assets/images/a.jpg);*/
   background-size: contain;
   width: 1000px;
   height: 300px;
   border: 2px solid;
-  color: pink;
+  color: rgb(255, 212, 219);
+  /*
   resize: both;
-  overflow: hidden;
+  overflow: hidden;*/
   
+}
+
+.img-responsive {
+
+padding-top: 2px;
+margin-bottom: 4px;
+padding: 2em;
+margin: auto;
+}
+
+.text-center, .row {
+  padding-top: 1em;
+  padding-bottom: 1em;
+ 
 }
 
 .footer {
@@ -21,12 +36,12 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: darkgrey;
+  background-color:#ececec;
   color: #3c3c3c;
-  text-align: center;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  padding: 5%;
+  text-align: left;
+  /*padding-bottom: 1em;
+  padding-top: 1em;*/
+  padding: 3%;
   margin: auto;
   text-emphasis-color: black;
 }
@@ -39,12 +54,52 @@
 
 </style>
 
+
+
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(229, 226, 226)">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="container-fluid" id="navbarNav">
+      <ul class="nav navbar-nav navbar-center" style="nav-down: auto;">
+          
+          <li class="nav-item active">
+              <a class="nav-link" style="color: black;" href="#">About Us<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="#">News</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="#">Songs</a>
+
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="#">TV</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="#">Music</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="#">Support</a>
+          </li>
+         
+      </ul>
+  </div>
+</nav>
+<br>
+<br>
+
 <div class="container">
 
-<div class="card bg-dark text-white">
+<div class="card bg-dark text-white padding-2em">
     
     <a href="https://www.buzentechnologies.com">
-        <img src="assets/images/a.jpg" width="433" height="501"  alt=".." width="1000" height="300">
+        <img src="assets/images/a.jpg" width="250" height="300"  alt="" width="1000" height="300" >
     </a>
   </div>
 
@@ -56,58 +111,16 @@
 </div>
 
 
+ 
 
-
-
-
-
-  <div id="switcher">
-		<div class="center">
-            <div class="logo">
-                <a href="http://www.themewagon.com">
-					<img class="logo" src="https://themewagon.com/wp-content/themes/wagoncore/img/logo-demo.png" alt="ThemeWagon">
-				</a>
-            </div>
-
-                <ul>
-                    <li id="theme_list">
-                    	<a id="theme_select" href="https://themewagon.com/themes">View All Themes</a>
-                    </li>
-                </ul>
-                <div class="responsive">
-                    <a href="#" class="desktop active" title="View Desktop Version"></a>
-                    <a href="#" class="tabletlandscape" title="View Tablet Landscape (1024x768)"></a>
-                    <a href="#" class="tabletportrait" title="View Tablet Portrait (768x1024)"></a>
-                    <a href="#" class="mobilelandscape" title="View Mobile Landscape (480x320)"></a>
-                    <a href="#" class="mobileportrait" title="View Mobile Portrait (320x480)"></a>
-                </div>
-
-                <ul class="links">
-                    <li class="download">
-                    	<a href="https://themewagon.com/themes/project-app-showasing-onepage-bootstrap-template-free/">
-                    		<img src="https://themewagon.com/wp-content/themes/wagoncore/img/download.png" alt=""/>
-                    		Download
-                    	</a>
-                    </li>
-                    <li class="close">
-                    	<a href="https://technext.github.io/Nova/">
-                    		<img src="https://themewagon.com/wp-content/themes/wagoncore/img/cross.png" alt="" />
-                    		Close
-                    	</a>
-                    </li>
-                </ul>
-        </div>
-    </div>
-
-    <iframe id="iframe" src="https://technext.github.io/Nova/" frameborder="0" width="100%"></iframe>
-
-
+<br>
+<br>
 
 
     <footer>
 
       <div class="footer">
-        <hr class="line" style="background-color:grey;">
+        <!--<hr class="line" style="background-color:grey;">-->
         <div class="row">
       
            <!-- Grid column -->
@@ -142,23 +155,23 @@
         <div class="col-md-3 mx-auto">
       
           <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><b>Links</b></h5>
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="text-align: center;"><b>Links</b></h5>
       
-          <ul class="list-unstyled">
+          <ul class="list-unstyled" style="text-indent: 30px;">
             <li>
-              <a href="#!"> <i class="fa fa-home"></i>Home</a>
+              <a href="#!" style="color: black;"> <i class="fa fa-home" style="margin: 0 5px 0 0;"></i>Home</a>
             </li>
             <li>
-              <a href="#!"> <i class="fa fa-info-circle"></i>About</a>
+              <a href="#!" style="color: black;"> <i class="fa fa-info-circle" style="margin: 0 5px 0 0;"></i>About</a>
             </li>
             <li>
-              <a href="#!"> <i class="fa fa-briefcase"></i>Services</a>
+              <a href="#!" style="color: black;"> <i class="fa fa-briefcase" style="margin: 0 5px 0 0;"></i>Services</a>
             </li>
             <li>
-              <a href="#!"> <i class="fa fa-code"></i>Projects</a>
+              <a href="#!" style="color: black;"> <i class="fa fa-code" style="margin: 0 5px 0 0;"></i>Projects</a>
             </li>
             <li>
-              <a href="#!"> <i class="fa fa-envelope-open"></i>Contacts</a>
+              <a href="#!" style="color: black;"> <i class="fa fa-envelope-open" style="margin: 0 5px 0 0;"></i>Contacts</a>
             </li>
           </ul>
       
@@ -182,12 +195,10 @@
                   <form id="subscribeForm" method="post">
                     <div class="form-group label-floating mt-2 mb-1">
                       <div class="input-group ms-input-subscribe">
-                        <label class="control-label" for="ms-subscribe">
-                          
-                          <i class="zmdi zmdi-email" style="margin: 4px;"></i> Email Address </label>
-                        
+                      <div>
                         <input type="email" id="ms-subscribe"
                           name="subscription_email" class="form-control" placeholder="Email address" required>
+                        </div>
                       </div>
                     </div>
                     <button class="ms-subscribre-btn" type="submit" style="margin: 8px;"> Subscribe <i class="color-danger-light fa fa-envelope-open"></i></button>
@@ -209,13 +220,13 @@
       
               <ul class="list-unstyled">
                 <li>
-                  <a href="#!"><i class="fa fa-facebook" style="margin: 4px;"></i>Facebook</a>
+                  <a href="#!" style="color: black;"><i class="fa fa-facebook" style="margin: 0 5px 0 0;"></i>Facebook</a>
                 </li>
                 <li>
-                  <a href="#!"><i class="fa fa-twitter" style="margin: 4px;"></i>Twitter</a>
+                  <a href="#!" style="color: black;"><i class="fa fa-twitter" style="margin: 0 5px 0 0;"></i>Twitter</a>
                 </li>
                 <li>
-                  <a href="#!"><i class="fa fa-instagram"style="margin: 4px;" ></i>Instagram</a>
+                  <a href="#!" style="color: black;"><i class="fa fa-instagram" style="margin: 0 5px 0 0;" ></i>Instagram</a>
                 </li>
               </ul>
       
@@ -227,9 +238,9 @@
       
       
       </div>
-      <hr class="line" style="background-color:grey;">
+      <!--<hr class="line" style="background-color:grey;">-->
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <div class="footer-copyright text-center py-3" style="background-color:#d6d6d6;">© 2020 Copyright:
         <a href="https://mdbootstrap.com/">choir.immaculateconception@gmail.com</a>
       </div>
       

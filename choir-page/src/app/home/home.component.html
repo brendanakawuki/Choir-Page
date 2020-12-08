@@ -44,27 +44,25 @@
 
 	 } */
 
-	 .footer {
+	 .footer{
   /*position: fixed;*/
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: darkgrey;
-  color: white;
-  text-align: center;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  padding: 5%;
+  background-color: #ececec;
+  color:  #3c3c3c;
+  text-align: left;
+  padding-left: 10%;
   margin: auto;
   text-emphasis-color: black;
 }
-.zmdi, .fa, .list-unstyled {
+ .fa, .list-unstyled {
   color: black;
 }
 
 	h1,
 	h3 {
-		color: navy;
+		/*color: navy;*/
 		font-size: 30px;
 		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	}
@@ -110,6 +108,7 @@
 		height: 10px;
 		width: 10px;
 		padding: 1em;
+		
 	}
 
 	.img-responsive {
@@ -119,12 +118,55 @@
 		padding: 2em;
 		margin: auto;
 	}
+	.fa, .list-unstyled, ul{
+		text-emphasis-color: black;
+		
+		
+	}
 
 
 </style>
 <script>
 
 </script>
+
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(229, 226, 226)">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+  
+	<div class="container-fluid" id="navbarNav">
+		<ul class="nav navbar-nav navbar-center" style="nav-down: auto;">
+			
+			<li class="nav-item active">
+				<a class="nav-link" style="color: black;" href="#">About Us<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" style="color: black;" href="#">News</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" style="color: black;" href="#">Careers</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" style="color: black;" href="#">Songs</a>
+  
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" style="color: black;" href="#">TV</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" style="color: black;" href="#">Music</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" style="color: black;" href="#">Support</a>
+			</li>
+		   
+		</ul>
+	</div>
+  </nav>
+  <br>
+  <br>
 
 
 <carousel>
@@ -151,7 +193,8 @@
 	</slide>
 </carousel>
 
-<div class="container">
+
+<div class="container-fluid">
 	<!-- <div class="jumbotron">
 		<h1 class="display-4">Hello, world!</h1>
 		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
@@ -267,14 +310,16 @@
 						<br>
 						<br>
 						<div class="row">
-							<div class="col-md-4 col-4" style="width: 10rem; height: 8%;">
+							<div class="col-md-4 col-4" style="width: 8rem; height: 4%;">
 
 								<img class="card-img-top" src="assets/images/child.jpg" alt="#">
 								<div class="card-body">
 									<h5 class="card-title"><strong>MUSIC</strong></h5>
 									<p class="card-text">This includes the differnt voices plus people playing
 										musical instruments.</p>
-									<b><a href="#" class="btn btn-primary">AVAILABLE INSTRUMENTS</a></b>
+										<br>
+										<br>
+									<b><a href="#" class="btn btn-primary">Available Instruments</a></b>
 								</div>
 								<b>
 									<div class="card-footer bg-transparent border-success">MUSIC FOR THE SOUL
@@ -284,14 +329,16 @@
 
 							<br>
 							<br>
-							<div class="col-md-4 col-4" style="width: 10rem; height: 8%;">
+							<div class="col-md-4 col-4" style="width: 8rem; height: 4%;">
 
 								<img class="card-img-top" src="assets/images/choir.jpg" alt="#">
 								<div class="card-body">
 									<h5 class="card-title"><strong>CHOIR</strong></h5>
 									<p class="card-text">This includes the differnt voices plus people playing
 										musical instruments.</p>
-									<b><a href="#" class="btn btn-primary"> VIEW CHOIR PRACTICES</a></b>
+										<br>
+										<br>
+									<b><a href="#" class="btn btn-primary"> View Choir Practices</a></b>
 								</div>
 								<b>
 									<div class="card-footer bg-transparent border-success">WE ARE FAMILY</div>
@@ -299,14 +346,16 @@
 							</div>
 
 							<br>
-							<div class="col-md-4 col-4" style="width: 10rem; height: 8%;">
+							<div class="col-md-4 col-4" style="width: 8rem; height: 4%;">
 
 								<img class="card-img-top" src="assets/images/mass.jpg" alt="#">
 								<div class="card-body">
 									<h5 class="card-title"><strong>MASS</strong></h5>
 									<p class="card-text">This includes the differnt voices plus people playing
 										musical instruments.</p>
-									<b><a href="#" class="btn btn-primary">VIEW READINGS</a></b>
+										<br>
+										<br>
+									<b><a href="#" class="btn btn-primary" >View Readings</a></b>
 								</div>
 								<b>
 									<div class="card-footer bg-transparent border-success">EVANGELIZE YOUR
@@ -330,6 +379,7 @@
 										<p class="lead" style="text-align: justify;">our solution is to be
 											available for each and every
 											function that we get bookrd for.</p>
+											<a href="#" class="btn btn-default btn-lg showcase-btn" style="color:rgb(44, 25, 25)">Read more</a>
 									</div>
 
 									<div class="col-md-6 col-sm-6">
@@ -337,7 +387,7 @@
 											<img src="assets/images/child.jpg" width="446" height="505" alt=""
 												class="img-responsive center-block text-center animated zoomInDown animation-delay-5" />
 										</div>
-										<a href="#" class="btn btn-default btn-lg showcase-btn" style="color:rgb(44, 25, 25)">Read more</a>
+										
 									</div>
 								</div>
 							</div>
@@ -354,8 +404,7 @@
 											<img src="assets/images/choir.jpg" width="433" height="500" alt=""
 												class="img-responsive center-block text-center animated zoomInDown animation-delay-5" />
 										</div>
-										<a href="#" class="btn btn-default btn-lg showcase-btn-primary" style="color:rgb(44, 25, 25)">Read more</a>
-									</div>
+										</div>
 									<br>
 									<div class="col-md-6 col-sm-6">
 										<h1 class="color-light">Choir Bookings</h1>
@@ -370,6 +419,7 @@
 											you in Planning, Designing,
 											Developing.
 										</p>
+										<a href="#" class="btn btn-default btn-lg showcase-btn" style="color:rgb(44, 25, 25)">Read more</a>
 									</div>
 								</div>
 							</div>
@@ -444,7 +494,7 @@
 	
 
 	<div class="footer">
-	  <hr class="line" style="background-color:grey;">
+	  <!--<hr class="line" style="background-color:grey;">-->
 	  <div class="row">
 	
 		 <!-- Grid column -->
@@ -479,23 +529,23 @@
 	  <div class="col-md-3 mx-auto">
 	
 		<!-- Links -->
-		<h5 class="font-weight-bold text-uppercase mt-3 mb-4"><b>Links</b></h5>
+		<h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="margin: 5px 0 0 0; text-align: center;"><b>Links</b></h5>
 	
-		<ul class="list-unstyled">
+		<ul class="list-unstyled" style="text-indent: 30px;">
 		  <li>
-			<a href="#!"> <i class="fa fa-home"></i>Home</a>
+			<a href="#!" style="color: black;"> <i class="fa fa-home" style="margin: 0 5px 0 0;"></i>Home</a>
 		  </li>
 		  <li>
-			<a href="#!"> <i class="fa fa-info-circle"></i>About</a>
+			<a href="#!" style="color: black;"> <i class="fa fa-info-circle" style="margin: 0 5px 0 0;"></i>About</a>
 		  </li>
 		  <li>
-			<a href="#!"> <i class="fa fa-briefcase"></i>Services</a>
+			<a href="#!" style="color: black;"> <i class="fa fa-briefcase" style="margin: 0 5px 0 0;"></i>Services</a>
 		  </li>
 		  <li>
-			<a href="#!"> <i class="fa fa-code"></i>Projects</a>
+			<a href="#!" style="color: black;"> <i class="fa fa-code" style="margin: 0 5px 0 0;"></i>Projects</a>
 		  </li>
 		  <li>
-			<a href="#!"> <i class="fa fa-envelope-open"></i>Contacts</a>
+			<a href="#!" style="color: black;"> <i class="fa fa-envelope-open" style="margin: 0 5px 0 0;"></i>Contacts</a>
 		  </li>
 		</ul>
 	
@@ -519,8 +569,6 @@
 				<form id="subscribeForm" method="post">
 				  <div class="form-group label-floating mt-2 mb-1">
 					<div class="input-group ms-input-subscribe">
-					  <label class="control-label" for="ms-subscribe">
-						<i class="zmdi zmdi-email" style="margin: 4px;"></i> Email Address</label>
 					  <input type="email" id="ms-subscribe"
 						name="subscription_email" class="form-control" placeholder="Email address" required>
 					</div>
@@ -542,15 +590,15 @@
 			<!-- Links -->
 			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social Media</h5>
 	
-			<ul class="list-unstyled">
+			<ul class="list-unstyled" style="text-emphasis-color: black">
 			  <li>
-				<a href="#!"><i class="fa fa-facebook" style="margin: 4px;"></i>Facebook</a>
+				<a href="#!" style="color: black;"><i class="fa fa-facebook" style="margin: 0 5px 0 0;"></i>Facebook</a>
 			  </li>
 			  <li>
-				<a href="#!"><i class="fa fa-twitter" style="margin: 4px;"></i>Twitter</a>
+				<a href="#!" style="color: black;"><i class="fa fa-twitter" style="margin: 0 5px 0 0;"></i>Twitter</a>
 			  </li>
 			  <li>
-				<a href="#!"><i class="fa fa-instagram"style="margin: 4px;" ></i>Instagram</a>
+				<a href="#!" style="color: black;"><i class="fa fa-instagram"style="margin: 0 5px 0 0;" ></i>Instagram</a>
 			  </li>
 			</ul>
 	
@@ -562,9 +610,9 @@
 	
 	
 	</div>
-	<hr class="line" style="background-color:grey;">
+	
 	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	<div class="footer-copyright text-center py-3" style="background-color:#d6d6d6;">© 2020 Copyright:
 	  <a href="https://mdbootstrap.com/">choir.immaculateconception@gmail.com</a>
 	</div>
 	<!-- Copyright -->

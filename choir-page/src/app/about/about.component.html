@@ -35,8 +35,8 @@ p{
 
 }
  .text-center, .row {
-  padding-top: 3em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
  
 }
 
@@ -45,19 +45,16 @@ p{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: darkgrey;
+  background-color: #ececec;
   color: #3c3c3c;
-  text-align: center;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  padding: 5%;
+  text-align: left  ;   
+  padding-left: 10%;
   margin: auto;
   text-emphasis-color: black;
 }
 .zmdi, .fa, .list-unstyled {
   color:black;
 }
-
 
 
 </style>
@@ -73,8 +70,7 @@ p{
 
   <div class="container-fluid" id="navbarNav">
       <ul class="nav navbar-nav navbar-center" style="nav-down: auto;">
-          <p>
-              <i class="fa fa-home mr-3" style='font-size:24px' style="color: white"></i></p>
+          
           <li class="nav-item active">
               <a class="nav-link" style="color: black;" href="#">About Us<span class="sr-only">(current)</span></a>
           </li>
@@ -211,7 +207,7 @@ p{
 
 
 <div class="container">
-  <h1 class="color-primary text-center" text-center><b> Executive Team </b></h1>
+  <h1 class="color-primary text-center"><b> Executive Team </b></h1>
 
   <div class="row">
   
@@ -296,7 +292,7 @@ p{
 <footer>
 
 <div class="footer">
-  <hr class="line" style="background-color:grey;">
+  <!-- <hr class="line" style="background-color:grey;"> -->
   <div class="row">
 
      <!-- Grid column -->
@@ -331,23 +327,23 @@ p{
   <div class="col-md-3 mx-auto">
 
     <!-- Links -->
-    <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><b>Links</b></h5>
+    <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="text-align: center;"><b>Links</b></h5>
 
-    <ul class="list-unstyled">
+    <ul class="list-unstyled" style="text-indent: 30px;">
       <li>
-        <a href="#!"> <i class="fa fa-home"></i>Home</a>
+        <a href="#!" style="color: black;"> <i class="fa fa-home" style="margin: 0 5px 0 0;"></i>Home</a>
       </li>
       <li>
-        <a href="#!"> <i class="fa fa-info-circle"></i>About</a>
+        <a href="#!" style="color: black;"> <i class="fa fa-info-circle" style="margin: 0 5px 0 0;"></i>About</a>
       </li>
       <li>
-        <a href="#!"> <i class="fa fa-briefcase"></i>Services</a>
+        <a href="#!" style="color: black;"> <i class="fa fa-briefcase" style="margin: 0 5px 0 0;"></i>Services</a>
       </li>
       <li>
-        <a href="#!"> <i class="fa fa-code"></i>Projects</a>
+        <a href="#!" style="color: black;"> <i class="fa fa-code" style="margin: 0 5px 0 0;"></i>Projects</a>
       </li>
       <li>
-        <a href="#!"> <i class="fa fa-envelope-open"></i>Contacts</a>
+        <a href="#!" style="color: black;"> <i class="fa fa-envelope-open" style="margin: 0 5px 0 0;"></i>Contacts</a>
       </li>
     </ul>
 
@@ -371,10 +367,10 @@ p{
             <form id="subscribeForm" method="post">
               <div class="form-group label-floating mt-2 mb-1">
                 <div class="input-group ms-input-subscribe">
-                  <label class="control-label" for="ms-subscribe">
-                    <i class="zmdi zmdi-email" style="margin: 4px;"></i> Email Address</label>
-                  <input type="email" id="ms-subscribe"
+                  <div>
+                    <input type="email" id="ms-subscribe"
                     name="subscription_email" class="form-control" placeholder="Email address" required>
+                  </div>
                 </div>
               </div>
               <button class="ms-subscribre-btn" type="submit" style="margin: 8px;"> Subscribe <i class="color-danger-light fa fa-envelope-open"></i></button>
@@ -396,13 +392,13 @@ p{
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!"><i class="fa fa-facebook" style="margin: 4px;"></i>Facebook</a>
+            <a href="#!" style="color: black;"><i class="fa fa-facebook" style="margin: 0 5px 0 0;"></i>Facebook</a>
           </li>
           <li>
-            <a href="#!"><i class="fa fa-twitter" style="margin: 4px;"></i>Twitter</a>
+            <a href="#!" style="color: black;"><i class="fa fa-twitter" style="margin: 0 5px 0 0;"></i>Twitter</a>
           </li>
           <li>
-            <a href="#!"><i class="fa fa-instagram"style="margin: 4px;" ></i>Instagram</a>
+            <a href="#!" style="color: black;"><i class="fa fa-instagram" style="margin: 0 5px 0 0;" ></i>Instagram</a>
           </li>
         </ul>
 
@@ -414,9 +410,9 @@ p{
 
 
 </div>
-<hr class="line" style="background-color:grey;">
+<!-- <hr class="line" style="background-color:grey;"> -->
 <!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2020 Copyright:
+<div class="footer-copyright text-center py-3" style="background-color:#d6d6d6;">© 2020 Copyright:
   <a href="https://mdbootstrap.com/">choir.immaculateconception@gmail.com</a>
 </div>
 <!-- Copyright -->
