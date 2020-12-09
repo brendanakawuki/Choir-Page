@@ -25,7 +25,7 @@ padding: 2em;
 margin: auto;
 }
 
-.text-center, .row {
+.text-center {
   padding-top: 1em;
   padding-bottom: 1em;
  
@@ -41,13 +41,19 @@ margin: auto;
   text-align: left;
   /*padding-bottom: 1em;
   padding-top: 1em;*/
-  padding: 3%;
+  padding: 5%;
   margin: auto;
   text-emphasis-color: black;
 }
 .zmdi, .fa, .list-unstyled {
   color:black;
 
+
+}
+.card-title, .card-text {
+font-size: 18px;
+font-family: 'New Times Roman''Arial Narrow', Arial, sans-serif;
+padding: .1em;
 
 }
   
@@ -99,11 +105,54 @@ margin: auto;
 <div class="card bg-dark text-white padding-2em">
     
     <a href="https://www.buzentechnologies.com">
-        <img src="assets/images/a.jpg" width="250" height="300"  alt="" width="1000" height="300" >
+      <div>
+        <img src="assets/images/f.jpg" alt="" width="999" height="350" padding="2rem" margin="auto">
+      </div>
     </a>
   </div>
+<br>
+<br>
+<br>
+<br>
 
+  <div class="row">
+    <div class="col-sm-4 col-4" style="width: 6rem; height: 4%;">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: right;"><b>The Annual Events</b></h5>
+          <p class="card-text">With the general events taking place in the choir.</p>
+          <a href="#" class="btn btn-primary">View Annual Events Info</a>
+        </div>
+        <img src="assets/images/a.jpg" width="250" height="300">
+        
+      </div>
+    
+    <div class="col-sm-4 col-4" style="width: 6rem; height: 4%;">
+      <!--remove the card class-->
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: right;"><b>Networking Events</b></h5>
+          <p class="card-text">Through networking we are able to be connected to other events available.</p>
+          <a href="#" class="btn btn-primary">View Networking Events Info</a>
+        </div>
+        <img src="assets/images/f.jpg" width="250" height="300">
+      </div>
+    
 
+   <div class="col-sm-4 col-4" style="width: 6rem; height: 4%;">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: right;"><b> Get Connected</b></h5>
+          <p class="card-text">Subscribe to our Mailing List</p>
+          <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+          <div>
+            <input type="email" id="ms-subscribe"
+              name="subscription_email" class="form-control" placeholder="Email address" required>
+            </div>
+            <br>
+            <button class="ms-subscribre-btn btn btn-primary" style=" text-align: center;"> Subscribe <i class="color-danger-light fa fa-envelope-open"></i></button>
+        </div>
+        <img src="assets/images/e.jpg" width="400" height="300" text-align="center">
+        
+    </div>
+  </div>
 
 
   
