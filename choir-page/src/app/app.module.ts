@@ -20,7 +20,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     HomeComponent,
     ServicesComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
