@@ -7,7 +7,64 @@
 	}
 
 	.carousel-caption {
-		background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(174, 180, 0, 0.7), rgba(255, 255, 255, 0));
+		background: linear-gradient(to top, rgba(134, 120, 120, 0), rgba(177, 216, 248, 0.7), rgba(250, 179, 179, 0));
+		position: absolute;
+		top: 54%;
+		transform: translateY(-50%);
+		text-transform: uppercase;
+	}
+
+	.bg-custom {
+		background-color: rgba(0, 0, 0, .4);
+		color: white;
+		border-radius: 1rem;
+
+	}
+
+	.carousel-cation h1 {
+		/*color: navy;*/
+
+		font-size: 3.8rem;
+		text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+
+	.border-primary {
+		border-top: .2rem solid #4981b3 !important;
+
+	}
+
+	.carousel-cation h3 {
+		/*color: navy;*/
+
+		font-size: 2.2rem;
+		text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+
+	.btn-lg {
+		border-radius: 0;
+		text-transform: uppercase;
+		font-size: 1rem;
+		border-width: medium;
+
+	}
+
+	.btn-danger {
+		background-color: #AC2615;
+		border: .05rem solid #AC2615;
+
+	}
+
+	.btn-primary {
+		background-color: #4981b3;
+		border: .05rem solid #4981b3;
+	}
+
+	.btn-primary:hover,
+	.btn-primary:focus {
+		background-color: #68a0d2 !important;
+		border: .05rem solid #68a0d2 !important;
 	}
 
 	/*.column {
@@ -61,14 +118,6 @@
 	.list-unstyled {
 		color: black;
 	}
-
-	h1,
-	h3 {
-		/*color: navy;*/
-		font-size: 30px;
-		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	}
-
 
 	.card {
 		animation-duration: 8s;
@@ -143,6 +192,7 @@
 	<!-- beginning of the second navbar -->
 
 	<div class="container-fluid" id="navbarNav">
+
 		<ul class="nav navbar-nav navbar-center" style="nav-down: auto;">
 
 			<li class="nav-item active">
@@ -183,22 +233,47 @@
 	<slide>
 		<img src="assets/images/youthchoir.jpg" alt="first slide" style="display: block; width: 100%; height: 400px;">
 		<div class="carousel-caption d-none d-md-block">
-			<h3>First slide label</h3>
-			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-8 bg-custom py-3 px-0">
+						<h1>Immaculate Conception Choir</h1>
+						<div class="border-top border-primary w-50 mx-auto my-3"></div>
+						<h3 class="pb-3">Cheerful Church Choir</h3>
+						<a href="#" class="btn btn-danger btn-lg mr-2"> view choir</a>
+						<a href="#" class="btn btn-primary btn-lg ml-2"> start now</a>
+						<!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+					</div>
+				</div>
+			</div>
 		</div>
 	</slide>
 	<slide>
 		<img src="assets/images/b.jpg" alt="second slide" style="display: block; width: 100%; height: 400px;">
 		<div class="carousel-caption d-none d-md-block">
-			<h3>Second slide label</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="container">
+				<div class="row justify-content-end text-right">
+					<div class="col-5 bg-custom py-3 px-0 pr-3">
+						<p class="lead pb-3"> The Choir Member are friendly and Social.</p>
+						<a href="#" class="btn btn-danger btn-lg"> See Phone</a>
+						<!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+					</div>
+				</div>
+			</div>
 		</div>
 	</slide>
 	<slide>
 		<img src="assets/images/a.jpg	" alt="third slide" style="display: block; width: 100%; height: 400px;">
 		<div class="carousel-caption d-none d-md-block">
-			<h3>Third slide label</h3>
-			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			<div class="container">
+				<div class="row justify-content-start text-left">
+					<div class="col-7 bg-custom py-3 px-0 pl-3">
+						<h3 class="pb-2">Built For Church choir</h3>
+						<p class="lead"> THE BEST WEBSITE CHOIR CAN BE SEEN JUST AS WELL ON ALL DEVICES.</p>
+						<a href="#" class="btn btn-primary btn-lg"> start now</a>
+						<!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+					</div>
+				</div>
+			</div>
 		</div>
 	</slide>
 </carousel>
@@ -338,8 +413,14 @@
 							<!-- end of the column buttons with different information -->
 							<br>
 							<br>
-
-							<!-- begin row for the card images -->
+							<!-- the sub-heading page image-->
+							<div class="col-12 text-center mt-5">
+								<h1 class="text-dark pt-4">Built with Ease</h1>
+								<div class="border-top border-primary w-25 mx-auto my-3"></div>
+								<p class="lead">For All The Information About The Choir Us We Are Available.</p>
+							</div>
+							<div class="container my-5"></div>
+							<!-- begin row for the 3 column section card images -->
 							<div class="row">
 								<div class="col-md-4 col-4" style="width: 8rem; height: 4%;">
 
@@ -401,7 +482,7 @@
 								</div>
 								<!-- end image mass -->
 							</div>
-							<!-- the row end for the card images -->
+							<!-- the row end for the 3 column section card images -->
 
 							<br>
 							<br>
@@ -476,7 +557,7 @@
 							<!-- begin the service section -->
 
 							<section id="showcase"
-								style="background-color: hsl(323, 81%, 89%); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+								style="background-color:#4981b3; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
 								<div class="container">
 									<div class="column">
 
@@ -493,32 +574,32 @@
 
 											<!-- image section services being offered in the choir -->
 
-											<div class="row-md-6 row-sm-6" style="text-align: center;">
+											<div class="row-md-6 row-sm-6 justify-content-center">
 												<h1 class="color-primary">Other Services</h1>
-												<hr class="color" style="background-color: red;">
+												<hr class="color" style="background-color: #AC2615;">
 												<ul class="list-unstyled hand-list">
 													<li class="animated fadeInLeft animation-delay-2">
-														<p class="lead"><i class="color-info fa fa-label"></i>
+														<p class="lead text-white"><i class="color-info fa fa-label"></i>
 															Church &amp;Consultancy</p>
 													</li>
 													<li class="animated fadeInLeft animation-delay-4">
-														<p class="lead"><i class="color-info fa fa-label"></i>
+														<p class="lead text-white"><i class="color-info fa fa-label"></i>
 															Available &amp; Services and Bookings</p>
 													</li>
 													<li class="animated fadeInLeft animation-delay-6">
-														<p class="lead"><i class="color-info fa fa-label"></i>
+														<p class="lead text-white"><i class="color-info fa fa-label"></i>
 															Design &amp; Development</p>
 													</li>
 													<li class="animated fadeInLeft animation-delay-8">
-														<p class="lead"><i class="color-info fa fa-label"></i>Resource
+														<p class="lead text-white"><i class="color-info fa fa-label"></i>Resource
 															Planning Solutions</p>
 													</li>
 													<li class="animated fadeInLeft animation-delay-10">
-														<p class="lead"><i class="color-info fa fa-label"></i>
+														<p class="lead text-white"><i class="color-info fa fa-label"></i>
 															Social Media Marketing</p>
 													</li>
 													<li class="animated fadeInLeft animation-delay-10">
-														<p class="lead"><i class="color-info fa fa-label"></i>
+														<p class="lead text-white"><i class="color-info fa fa-label"></i>
 															Church Content Generation</p>
 													</li>
 												</ul>
