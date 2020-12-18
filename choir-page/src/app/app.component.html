@@ -47,7 +47,7 @@
 	<img src="assets/images/logo.png" alt="" width="200" height="120" padding="2rem" margin="auto">
 	<!--<a class="navbar-brand" routerLink="home">IMMACULATE CONCEPTION CHOIR</a>-->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-		 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
+		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -78,37 +78,37 @@
 
 <h1>Angular 10 Bootstrap Modal Popup Example</h1>
 
-   
+
 
 <button class="btn btn-lg btn-outline-primary" (click)="open(mymodal)">Open My Modal</button>
 
-   
+
 
 <ng-template #mymodal let-modal>
 
-  <div class="modal-header">
+	<div class="modal-header">
 
-    <h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4>
+		<h4 class="modal-title" id="modal-basic-title">Bootstrap Modal</h4>
 
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+		<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
 
-      <span aria-hidden="true">×</span>
+			<span aria-hidden="true">×</span>
 
-    </button>
+		</button>
 
-  </div>
+	</div>
 
-  <div class="modal-body">
+	<div class="modal-body">
 
-    This is example from HDTuto.com
+		This is example from HDTuto.com
 
-  </div>
+	</div>
 
-  <div class="modal-footer">
+	<div class="modal-footer">
 
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+		<button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
 
-  </div>
+	</div>
 
 </ng-template>
 
@@ -140,7 +140,7 @@
 			<!-- Grid column -->
 			<div class="col-md-3 mx-auto">
 
-				<!-- Links -->
+				<!-- Paragraphs -->
 				<h5 class="font-weight-bold text-uppercase mt-3 mb-4"><b>ABOUT US</b></h5>
 
 				<ul class="list-unstyled">
@@ -160,18 +160,19 @@
 						<p> +256-781400190 </p>
 					</li>
 				</ul>
+				<!-- end of paragraphs -->
 
 			</div>
 
 			<hr>
 
 			<!-- Grid column -->
-			<div class="col-md-3 mx-auto">
+			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
 				<!-- Links -->
 				<h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="text-align:center;"><b>link</b></h5>
 
-				<ul class="list-unstyled" style="text-indent: 53px;">
+				<ul class="list-unstyled mb-0" style="text-indent: 45px;">
 					<li>
 						<a href="#!" style="color: black;">
 							<p> <i class="fa fa-home" style="margin: 0 5px 0 0;"></i> Home</p>
@@ -206,16 +207,14 @@
 			<hr class="clearfix w-100 d-md-none">
 
 			<!-- Grid column -->
-			<div class="col-md-3 mx-auto">
+			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
 				<!-- Links -->
-				<h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="text-indent:40px;"> <b>Contact Us</b></h5>
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="text-align:left"> <b>Contact Us</b></h5>
 
-				<ul class="list-unstyled" style="text-indent: 40px;">
+				<ul class="list-unstyled" style="text-indent: px;">
 					<li>
-						<p>
-							Subscribe to our newsletters
-						</p>
+						<p>Subscribe to our newsletters</p>
 					</li>
 					<li>
 						<form id="subscribeForm" method="post">
@@ -242,12 +241,12 @@
 			<hr class="clearfix w-100 d-md-none">
 
 			<!-- Grid column -->
-			<div class="col-md-3 mx-auto">
+			<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
 
 				<!-- Links -->
 				<h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="text-align:center">Social Media</h5>
 
-				<ul class="list-unstyled" style="text-indent: 41px;">
+				<ul class="list-unstyled" style="text-indent: 31px;">
 					<li>
 						<a href="#!" style="color: black;">
 							<p> <i class="fa fa-facebook" style="margin: 0 5px 0 0;"></i>Facebook</p>
@@ -264,6 +263,7 @@
 						</a>
 					</li>
 				</ul>
+				<!-- end links -->
 
 			</div>
 			<!-- Grid column -->

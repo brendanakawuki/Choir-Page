@@ -62,8 +62,8 @@
     /* Added */
     float: none;
     /* Added */
-    margin-bottom: 10px;
-    background-color: rgb(222, 234, 247);
+    /*margin-bottom: 10px;
+     background-color: rgb(222, 234, 247); */
     padding: 1em;
     margin: .5em;
 
@@ -105,7 +105,7 @@
 
 
   /* Popup box BEGIN */
-  .hover_bkgr_fricc {
+  /*.hover_bkgr_fricc {
     background: rgba(0, 0, 0, .4);
     cursor: pointer;
     display: none;
@@ -155,7 +155,7 @@
     text-align: center;
   }
 
-  .popupCloseButton:hover {
+   .popupCloseButton:hover {
     background-color: #ccc;
   }
 
@@ -167,7 +167,20 @@
     font-weight: bold;
   }
 
-  /* Popup box BEGIN */
+   /* Popup box BEGIN */
+  .banner_lg,
+  content {
+    background: url('assets/images/nature6.jpg') center center no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+
+  .header {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 7rem;
+  }
 </style>
 
 <script>
@@ -243,11 +256,61 @@
 
 
 
-<div class="container-fluid" style="background-color: #ecefe5;">
+<div class="container" style="background-color: #ecefe5;">
   <br>
   <br>
+  <!-- <section>
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <img src="assets/images/nature2.jpg" alt="" class="img-fluid" style="background-color: #3c3c3c;">
+      <div class="overlay ctr"><a href="#" target="_blank"><button type="button" class="btn btn-outline-dark">Let's Go</button></a></div>
+    </div>
 
-  <div class="card mb-3">
+  </div>
+
+</section> -->
+
+  <!-- contact us background image -->
+  <div class="banner_lg">
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="strapline"></div>
+          </div>
+          <div class="col-12">
+            <h3 class="header text-white"><b> CONTACT US</b></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end contact us background image -->
+
+
+
+
+
+
+  <!-- <div class="container-fluid"> 
+<div class="card-img-top">
+  <img class="card-img" src="assets/images/nature6.jpg" alt=""></div>
+    <div class="card-img overlay">
+     <h5 class="card-title">Card title</h5> 
+    <p class="card-text text-left">This is a wider card with supporting text below.</p>
+   
+    </div>
+  </div>
+</div>-->
+
+
+
+
+
+
+
+  <!-- <div class="card mb-3">
     <div class="row" style="text-align: justify;">
       <div class="col-md-4">
         <img src="assets/images/choir.jpg" padding="1em" width="600%" height="400px" class="card-img" alt="#">
@@ -262,73 +325,25 @@
 
         </div>
       </div>
-    </div>
-  </div>
+     </div> 
+  </div>-->
+
+
 
 
 
 
   <div class="container">
 
-
-    <!--<div class="row">
-        <div class="col-md-4 col-lg-4"></div>
-        <div class="col-md-4 col-lg-4">
-            <div class="form-v2-content">
-
-                <form class="form-detail" action="#" method="post" id="myform">
-                    <h2>Registration Form</h2>
-                    <br>
-
-                    <div class="form-group col-lg-12">
-                        <label for="full-name">Full Name:</label>
-                        <input type="text" name="full_name" id="full_name"
-                            class="btn btn-success padding-top input-text" placeholder="ex: brenda primah">
-                    </div>
-                    <br>
-                    <div class="form-group col-lg-12">
-                        <label for="your_email">Your Email:</label>
-                        <input type="text" name="your_email" id="your_email" class="btn btn-Info padding-top input-text"
-                            required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                    </div>
-                    <br>
-                    <div class="form-group col-lg-12">
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password"
-                            class="input-text btn btn-danger padding-top" required>
-                    </div>
-                    <br>
-                    <div class="form-group col-lg-12">
-                        <label for="comfirm-password">Confirm Password:</label>
-                        <input type="password" name="confirm_password" id="confirm_password"
-                            class="input-text btn btn-success padding-top" required>
-                    </div>
-                    <br>
-                    <div class="form-checkbox">
-                        <label class="container">
-                            <p>By signing up, you agree to the <a href="#" class="text">Play Term of Service</a></p>
-                            <input type="checkbox" name="agree" id="agree">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <br>
-                    <div class="form-row-last">
-                        <input type="submit" name="register" class="register" value="Register">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-4"></div>
-    </div>-->
     <br>
 
     <!--contact us added-->
 
 
-    <br>
+    <!-- <br> 
     <div class="card" style="background: rgb(122, 121, 121);">
       <p> CONTACT US <i class="fa fa-home">/ Home</i></p>
-    </div>
+    </div>-->
 
     <div class="lead">
       <br>
@@ -336,7 +351,8 @@
     </div>
 
 
-    <button class="btn btn-lg btn-outline-primary" (click)="open(mymodal)">How do I Contact Immaculate Conception Choir</button>
+    <button class="btn btn-lg btn-outline-primary" (click)="open(mymodal)">How do I Contact Immaculate Conception
+      Choir</button>
 
 
 
@@ -361,7 +377,7 @@
         CONTACT US, We're happy to help you.
         Email us with any questions or inquiries or call 0704636785 / 0781400190.
 
-        We would be happy to answer yourquestions and set up a meeting with you. 
+        We would be happy to answer yourquestions and set up a meeting with you.
         Click here for Live Chat.
 
       </div>
@@ -373,13 +389,13 @@
       </div>
 
       <!-- <div class="panel-heading" style="background: rgb(239, 239, 243);"> -->
-        <!-- <h4 class="panel-title"> -->
-          <!-- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040"> -->
+      <!-- <h4 class="panel-title"> -->
+      <!-- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040"> -->
 
-            <!-- <i class="indicator fa fa-chevron-down  pull-right"> -->
+      <!-- <i class="indicator fa fa-chevron-down  pull-right"> -->
 
-            <!-- </i> </a> -->
-        <!-- </h4> -->
+      <!-- </i> </a> -->
+      <!-- </h4> -->
 
       <!-- </div> -->
 
@@ -424,13 +440,13 @@
       </div>
 
       <!-- <div class="panel-heading" style="background: rgb(239, 239, 243);"> -->
-        <!-- <h4 class="panel-title"> -->
-          <!-- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040"> -->
+      <!-- <h4 class="panel-title"> -->
+      <!-- <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040"> -->
 
-            <!-- <i class="indicator fa fa-chevron-down  pull-right"> -->
+      <!-- <i class="indicator fa fa-chevron-down  pull-right"> -->
 
-            <!-- </i> </a> -->
-        <!-- </h4> -->
+      <!-- </i> </a> -->
+      <!-- </h4> -->
 
       <!-- </div> -->
 
@@ -576,7 +592,7 @@
 
       </div>
 
-      <div class="panel-heading" style="background: rgb(239, 239, 243);">
+      <!-- <div class="panel-heading" style="background: rgb(239, 239, 243);"> 
         <h4 class="panel-title">
           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#1040">
 
@@ -588,7 +604,7 @@
             </i> </a>
         </h4>
 
-      </div>
+      </div> -->
 
     </ng-template>
 
@@ -676,7 +692,7 @@
       </div>
     </div>
 
-    <div class="row form-group">
+    <!-- <div class="row form-group"> 
       <div class="col-sm-4"><span class="sr-only">CAPTCHA:</span></div>
 
       <div class="col-sm-8">
@@ -714,48 +730,42 @@
       </div>
     </div>
 
-  </div>
-  <br>
+  </div>-->
 
 
-  <!-- Sidebar -->
-  <div class="row">
+    <!-- Sidebar -->
+    <div class="row">
 
-    <div class="col-md-6">
+      <div class="col-md-6">
 
-      <div class="well text-center"><a class="btn btn-bock btn-primary nospeedbump"
-          href="https://oac.fmsiportal.com/AppointmentWidget/service?urlCode=AOMFL04HS29XWOHL1POI"
-          target="_blank">Submit/Make an Appointment</a></div>
+        <div class="well text-center"><a class="btn btn-bock btn-primary nospeedbump"
+            href="https://oac.fmsiportal.com/AppointmentWidget/service?urlCode=AOMFL04HS29XWOHL1POI"
+            target="_blank">Submit/Make an Appointment</a></div>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-md-6">
-
-
-      <div class="list-group">
+    <div class="row">
+      <div class="col-md-6">
 
 
+        <div class="list-group">
+
+        </div>
+
+        <section class="map-section">
+          <!--Google map-->
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 300px">
+            <iframe
+              src="https://maps.google.com/maps?q= St.+Thomas+of+Aquinos+Kyebando+Subparish&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <!--Google Maps-->
+        </section>
 
       </div>
 
 
-
-
-      <section class="map-section">
-        <!--Google map-->
-        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 300px">
-          <iframe
-            src="https://maps.google.com/maps?q= St.+Thomas+of+Aquinos+Kyebando+Subparish&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <!--Google Maps-->
-      </section>
-
     </div>
 
-
-  </div>
-
-  <br>
-  <br>
+    <br>
+    <br>

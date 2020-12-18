@@ -178,12 +178,25 @@
 
 	/* fixed background img */
 	.fixed {
-		background-image: url('assets/images/nature1.jpg');
+		/* background-image: url('assets/images/nature1.jpg'); */
 		position: fixed;
 	}
 
-	.fixed-background {
-		padding: 10rem 0;
+	.fixed-background,
+	.modal {
+		padding: 2rem 0;
+		background: url('assets/images/nature5.jpg');
+		margin: auto;
+		width: 100%;
+		height: 300px;
+	}
+
+	.lead,
+	.color-primary,
+	.color-light,
+	.btn {
+		font-family: 'Times New Roman', Times, serif;
+		font-size: 15px;
 	}
 </style>
 <script>
@@ -516,7 +529,7 @@
 								<div class="row my-5">
 
 									<div class="col-md-4 my-4">
-										<img src="assets/images/mass.jpg" alt="" class="w-100">
+										<img src="assets/images/nature4.jpg" alt="" class="w-100">
 										<h4 class="my-4">"amazing choir"</h4>
 										<p>use this to do any thing the choir instruments.</p>
 										<a href="#" class="btn btn-outline-dark btn-md">Our Story</a>
@@ -524,7 +537,7 @@
 
 
 									<div class="col-md-4 my-4">
-										<img src="assets/images/mass.jpg" alt="" class="w-100">
+										<img src="assets/images/nature3.jpg" alt="" class="w-100">
 										<h4 class="my-4">"amazing choir"</h4>
 										<p>use this to do any thing the choir instruments.</p>
 										<a href="#" class="btn btn-outline-dark btn-md">Our Story</a>
@@ -532,7 +545,8 @@
 
 
 									<div class="col-md-4 my-4">
-										<img src="assets/images/mass.jpg" alt="" class="w-100">
+										<img src="assets/images/nature1.jpg" alt="" class="w-100"
+											style="width: auto; height: 158px;">
 										<h4 class="my-4"> amazing choir</h4>
 										<p>use this to do any thing the choir instruments.</p>
 										<a href="#" class="btn btn-outline-dark btn-md">Our Story</a>
@@ -546,17 +560,109 @@
 
 							<!-- start fixed background IMG -->
 							<div class="fixed-background">
-								<img src="assets/images/nature1.jpg" alt="" class="w-100">
+								<!-- <img src="assets/images/nature1.jpg" alt="" class="w-100"> -->
 								<div class="row text-dark py-5">
 									<div class="col-12 text-center">
+										<!-- begin the heading of modal popup buttons -->
 
-										<h1> Advanced Choir Reserved For Bookings</h1>
-										<h3 class="py-4">..see our schedule.</h3>
+										<h1 class="text-white"> Advanced Choir Reserved For Bookings</h1>
+										<h3 class="py-4 text-white">..see our schedule.</h3>
+										<!-- the modal popup for the blue pill -->
 
 										<button type="button" data-toggle="modal" data-target="#modal1"
-											class="btn btn-primary btn-lg mr-2"> Blue Pill</button>
+											class="btn btn-primary btn-lg mr-2" (click)="open(mymodal)"> Blue
+											Pill</button>
+
+										<ng-template #mymodal let-modal>
+
+											<div class="modal-header">
+
+												<h4 class="modal-title" id="modal-basic-title">Alert Question</h4>
+
+												<button type="button" class="close" aria-label="Close"
+													(click)="modal.dismiss('Cross click')">
+
+													<span aria-hidden="true">×</span>
+
+												</button>
+
+											</div>
+											<!-- End the modal popup for the blue pill button-->
+
+											<!-- the modal-body for the blue pill button-->
+											<div class="modal-body">
+
+												We are here for you 24/7…
+
+												Our dedicated Customer Care representatives are available on a 24-hour
+												basis
+												to attend to all your inquiries, complaints, and basic service needs.
+
+												Stay in touch with the details below:
+
+											</div>
+											<!-- End modal-body -->
+
+											<!-- modal-footer -->
+											<div class="modal-footer">
+
+												<button type="button" class="btn btn-outline-dark"
+													(click)="modal.close('Save click')">Ok</button>
+
+											</div>
+											<!-- End modal-footer -->
+
+										</ng-template>
+										<!-- End the heading of modal popup buttons -->
+
+
+										<!-- the modal popup for the Red pill button -->
 										<button type="button" data-toggle="modal" data-target="#modal1"
-											class="btn btn-danger btn-lg ml-2"> Red Pill</button>
+											class="btn btn-danger btn-lg ml-2" (click)="open(mymodal)"> Red
+											Pill</button>
+
+										<ng-template #mymodal let-modal>
+
+											<div class="modal-header">
+
+												<h4 class="modal-title" id="modal-basic-title">Alert Question</h4>
+
+												<button type="button" class="close" aria-label="Close"
+													(click)="modal.dismiss('Cross click')">
+
+													<span aria-hidden="true">×</span>
+
+												</button>
+
+											</div>
+											<!-- End the modal popup for the red pill button -->
+
+											<!-- the modal-body for the red pill button -->
+
+											<div class="modal-body">
+
+												We are here for you 24/7…
+
+												Our dedicated Customer Care representatives are available on a 24-hour
+												basis
+												to attend to all your inquiries, complaints, and basic service needs.
+
+												Stay in touch with the details below:
+
+											</div>
+											<!-- End modal-body -->
+
+											<!-- modal-footer -->
+
+											<div class="modal-footer">
+
+												<button type="button" class="btn btn-outline-dark"
+													(click)="modal.close('Save click')">Ok</button>
+
+											</div>
+											<!-- End modal-footer -->
+										</ng-template>
+										<!-- End the heading of modal popup buttons -->
 
 									</div>
 
@@ -576,14 +682,14 @@
 
 
 							<!-- modal Popup -->
-							<div class="modal fade" id="modal1">
+							<div class="modal fade">
 								<div class="modal-dialog">
-									<img src="assets/images/poo.jpg" alt="" class="w-100">
+									<img src="assets/images/nature1.jpg" alt="" class="w-100">
 								</div>
 							</div>
 
 
-							<h1>Angular 10 Bootstrap Modal Popup Example</h1>
+							<!-- <h1>Angular 10 Bootstrap Modal Popup Example</h1> 
 
 
 
@@ -625,7 +731,7 @@
 
 								</div>
 
-							</ng-template>
+							</ng-template> -->
 
 
 							<br>
@@ -698,7 +804,7 @@
 
 							<br>
 
-							<!-- begin the service section -->
+							<!-- beginning the service section -->
 
 							<section id="showcase"
 								style="background-color:#4981b3; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
@@ -708,7 +814,7 @@
 										<div class="row-md-6 row-sm-6">
 
 											<div class="showcase-right" style="text-align:center">
-												<img src="assets/images/mass.jpg" width="800" height="401"
+												<img src="assets/images/nature1.jpg" width="800" height="401"
 													padding="auto" alt="#"
 													class="img-responsive mt-6 center-block text-center animated zoomInDown animation-delay-5" />
 											</div>
@@ -719,43 +825,42 @@
 											<!-- image section services being offered in the choir -->
 
 											<div class="row-md-6 row-sm-6 justify-content-center">
-												<h1 class="color-primary">Other Services</h1>
+												<h1 class="color-primary text-center">Other Services</h1>
 												<hr class="color" style="background-color: #AC2615;">
 												<ul class="list-unstyled hand-list">
-													<li class="animated fadeInLeft animation-delay-2">
-														<p class="lead text-white"><i
-																class="color-info fa fa-label"></i>
+													<li class="animated fadeInLeft animation-delay-2 text-center">
+														<p class="lead text-white">
+
 															Church &amp;Consultancy</p>
 													</li>
-													<li class="animated fadeInLeft animation-delay-4">
-														<p class="lead text-white"><i
-																class="color-info fa fa-label"></i>
+													<li class="animated fadeInLeft animation-delay-4 text-center"
+														style="text-align:center">
+														<p class="lead text-white" style="text-indent: 110px;">
 															Available &amp; Services and Bookings</p>
 													</li>
-													<li class="animated fadeInLeft animation-delay-6">
+													<li class="animated fadeInLeft animation-delay-6 text-center">
 														<p class="lead text-white"><i
 																class="color-info fa fa-label"></i>
 															Design &amp; Development</p>
 													</li>
-													<li class="animated fadeInLeft animation-delay-8">
-														<p class="lead text-white"><i
-																class="color-info fa fa-label"></i>Resource
+													<li class="animated fadeInLeft animation-delay-8 text-center">
+														<p class="lead text-white" style="text-indent: 59px;">Resource
 															Planning Solutions</p>
 													</li>
-													<li class="animated fadeInLeft animation-delay-10">
-														<p class="lead text-white"><i
-																class="color-info fa fa-label"></i>
+													<li class="animated fadeInLeft animation-delay-10 text-center">
+														<p class="lead text-white" style="text-indent: 15px;">
+
 															Social Media Marketing</p>
 													</li>
-													<li class="animated fadeInLeft animation-delay-10">
-														<p class="lead text-white"><i
-																class="color-info fa fa-label"></i>
+													<li class="animated fadeInLeft animation-delay-12 text-center">
+														<p class="lead text-white" style="text-indent: 45px;">
+
 															Church Content Generation</p>
 													</li>
 												</ul>
 											</div>
 										</div>
-										<!--image end section services being offered in the choir -->
+										<!--End image section services being offered in the choir -->
 										<br>
 										<br>
 										<br>
@@ -764,7 +869,7 @@
 								</div>
 							</section>
 
-							<!-- end the service section -->
+							<!-- End the service section -->
 
 							<br>
 							<br>
